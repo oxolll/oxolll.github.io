@@ -1,5 +1,5 @@
 ---
-title: "Advanced Algo"
+title: "Graph Theory"
 date: 2026-01-21T17:08:19+08:00
 draft: false 
 hidden: true

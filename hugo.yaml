@@ -4,35 +4,124 @@ title: "My Research Notes"
 theme: "PaperMod"
 
 enableInlineShortcodes: true
-
-# 讓首頁顯示完整的 HTML (讓連結可以點)
-# 如果不加這行，摘要會濾掉 HTML
 enableEmoji: true
 
 params:
-  # 數學公式支援 (一定要開)
   math: true
   defaultTheme: "auto"
   ShowToc: true
   
-  # 首頁置頂資訊區 (Home Info Mode)
-  # 這就是你要的：文字 -> 連結 -> 文字
   homeInfoParams:
-    Title: "碩士生涯規畫 🗺️"
-    Content: >
-        歡迎來到 oxolll 的研究筆記。
+    Title: "CYH 的學習歷程 🗺️"
+    Content: |
+      <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$','$$'], ['\\[', '\\]']],
+            processEscapes: true
+          }
+        };
+      </script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      歡迎來到 CYH 的網站。 我大學就讀國立金門大學，畢業後經由考試入學錄取國立陽明交通大學數據工程與科學研究所就讀，歷時3.5年的碩士生涯後於2026年1月畢業。
+      寫這個網站的初衷為記錄自己經歷，以便讓人更清楚我的學習歷程!
+      
+      <br>
+
+      以下為我前半段碩士生涯的修課紀錄:
+      
+      <br>
+
+      ## 碩士課程：
+
+      <br>
+
+      ### 111 上
+      🔹 [生物統計 (Biostatistics)](/posts/Biostatistics/) - 狀態：✅ 已修畢 / 等級成績: A-<br>
+        &emsp;&emsp; - 授課教授: 王維菁
         
-        **核心課程與進度：**
-          
-        🔹 [高等演算法 (Advanced Algo)](/posts/advanced-algo/) - 狀態：✅ 已修畢
+      🔹 [圖形理論 (Graph Theory)](/posts/Graph_Theory/) - 狀態：✅ 已修畢 / 等級成績: A<br>
+        &emsp;&emsp; - 授課教授: 林政寬
         
-        🔹 [計算機結構 (Comp Arch)](/posts/comp-arch/) - 狀態：🔄 修課中
+      🔹 [演算法 (Algorithms)](/posts/Algorithms/) - 狀態：✅ 已修畢 / 等級成績: A-<br>
+        &emsp;&emsp; - 授課教授: 荊宇泰
         
-        **研究計畫：**
+      🔹 [賽局理論 (Game Theory and Its Applications)](/posts/Game_Theory/) - 狀態：✅ 已修畢 / 等級成績: A-<br>
+        &emsp;&emsp; - 授課教授: 嚴力行
+        <br><br>
+
+      ### 111 下
+      🔹 [密碼理論 (Theory of cryptology)](/posts/Theory_of_cryptology/) - 狀態：✅ 已修畢 / 等級成績: B<br>
+        &emsp;&emsp; - 授課教授: 曾文貴
         
-        🔸 [k-SAT Lower Bounds](/posts/paper-ksat/) - 論文研讀中
+      🔹 [機器學習 (Machine Learning)](/posts/Machine_Learning/) - 狀態：✅ 已修畢 / 等級成績: B+<br>
+        &emsp;&emsp; - 授課教授: 洪瑞鴻、邱維辰
         
-        👇 下方是最近更新的筆記列表
+      🔹 [軟體測試 (Software Testing)](/posts/Software_Testing/) - 狀態：✅ 已修畢 / 等級成績: A+<br>
+        &emsp;&emsp; - 授課教授: 黃世昆
+        
+      🔹 [難解計算問題專論 (Selected Topics in Intractable Problems)](/posts/Selected_Topics_in_Intractable_Problems/) - 狀態：✅ 已修畢 / 等級成績: A+<br>
+        &emsp;&emsp; - 授課教授: 高孟駿
+        <br><br>
+      
+      ### 112 上
+      🔹 [正規語言與計算複雜度 (Formal Languages and Theory of Computation)](/posts/Formal_Languages_and_Theory_of_Computation/) - 狀態：✅ 已修畢 / 等級成績: A-<br>
+        &emsp;&emsp; - 授課教授: 曾文貴
+        
+      🔹 [計算複雜度 (Computational Complexity)](/posts/Computational_Complexity/) - 狀態：✅ 已修畢 / 等級成績: A<br>
+        &emsp;&emsp; - 授課教授: 蔡錫鈞
+        
+      🔹 [數據科學專題 (Data Science Project)](/posts/Data_Science_Project/) - 狀態：✅ 已修畢 / 等級成績: A<br>
+        &emsp;&emsp; - 授課教授: 彭文志
+
+      <br><br>
+
+      碩士後半時間，我都再研讀論文跟做ㄧ些題目，以下會列出我所看過的書籍/論文(照時間先後列出)，並說明我碩士後半做了哪些題目。
+
+      <br>
+
+      ## 研究/計畫：
+      <br>
+
+      
+      🔸 [Dancing Links](/posts/Dancing_Links/) - Donald E. Knuth (2000)
+
+      🔸 [Depth Two $(n-2)$-Majority Circuits for $n$-Majority](/posts/Depth_Two_(n-2)_Majority_Circuits_for_n_Majority/) - Kazuyuki Amano∗† and Masafumi Yoshida∗ (2018)
+
+      🔸 [Short monotone formulae for the majority function](/posts/Short_monotone_formulae_for_the_majority_function/) - L. G. VALIANT (1984)
+
+      🔸 [Analysis of boolean functions](/posts/Analysis_of_boolean_functions/) - Ryan O'Donnell (2014)
+
+      🔸 [Depth-$2$ threshold circuits](/posts/Depth_2_threshold_circuits/) - Meena Mahajan (2019)
+      
+      🔸 [The average sensitivity of bounded-depth circuits](/posts/The_average_sensitivity_of_bounded_depth_circuits/) - Ravi B. Boppana (1997)
+
+      🔸 [Satisfiability coding lemma](/posts/Satisfiability_coding_lemma/) - Ramamohan Paturit, Pave1 Pud1d.k: and Francis Zanet (1997)
+
+      🔸 [Depth two majority circuits for majority and list expanders](/posts/Depth_two_majority_circuits_for_majority_and_list_expanders/) - Kazuyuki Amano (2018)
+
+      🔸 [Explicit construction of a small $\epsilon$-net for linear threshold functions](/posts/Explicit_construction_of_a_small_epsilon_net_for_linear_threshold_functions/) - Yuval Rabani and Amir Shpilka (2009)
+
+      🔸 [Existence and polynomial time construction of biregular, bipartite Ramanujan graphs of all degrees](/posts/Existence_and_polynomial_time_construction_of_biregular_bipartite_Ramanujan_graphs_of_all_degrees/) - Aurelien Gribinski and Adam W. Marcus (2021)
+
+      🔸 [Interlacing families IV: Bipartite Ramanujan graphs of all sizes](/posts/Interlacing_families_IV_Bipartite_Ramanujan_graphs_of_all_sizes/) - ADAM W. MARCUS, DANIEL A. SPIELMAN and NIKHIL SRIVASTAVA (2018)
+
+      🔸 [New explicit constant-degree lossless expanders](/posts/New_explicit_constant_degree_lossless_expanders/) - Golowich, Louis (2024)
+
+      🔸 [Depth-three circuits for inner product and majority functions](/posts/Depth_three_circuits_for_inner_product_and_majority_functions/) - Kazuyuki Amano (2023)
+
+      🔸 [Local enumeration and majority lower bounds](/posts/Local_enumeration_and_majority_lower_bounds/) - Mohit Gurumukhani, Ramamohan Paturi, Pavel Pudlak, Michael Saks, and Navid Talebanfard (2024)
+
+      🔸 [Circuits with medium fan-in](/posts/Circuits_with_medium_fan_in/) - Pavel Hrubeš and Anup Rao (2015)
+
+      🔸 [CNF Encodings of Symmetric Functions](/posts/CNF_Encodings_of_Symmetric_Functions/) - Gregory Emdin1, Alexander S. Kulikov, Ivan Mihajlin and Nikita Slezkin (2024)
+
+      🔸 [Local Enumeration: The Not-All-Equal Case](/posts/Local_Enumeration__The_Not_All_Equal_Case/) - Mohit Gurumukhani, Ramamohan Paturi, Michael Saks and Navid Talebanfard (2025)
+
+      <br>
+
+      👇 下方是最近更新的筆記列表
 
 # 右上角的選單設定
 menu:
@@ -49,3 +138,9 @@ menu:
       name: 歸檔
       url: /archives/
       weight: 30
+
+# 👇 關鍵修正：一定要加這段，<br> 才會生效！
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

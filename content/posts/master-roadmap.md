@@ -3,7 +3,9 @@ title: "碩士生涯規畫 (Master's Roadmap)"
 date: 2026-01-21T17:06:04+08:00
 draft: false
 # weight: 1
-hidden: true
+_build:
+    list: never      # 永遠不要出現在列表 (首頁清單)
+    render: always   # 但還是要產生頁面 (讓上面的連結點得進去)
 tags: ["Roadmap", "Plan"]
 ---
 

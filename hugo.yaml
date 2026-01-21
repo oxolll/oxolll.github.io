@@ -20,19 +20,19 @@ params:
   homeInfoParams:
     Title: "碩士生涯規畫 🗺️"
     Content: >
-      歡迎來到 oxolll 的研究筆記。
-      
-      **核心課程與進度：**
-      
-      🔹 [高等演算法 (Advanced Algo)](/posts/advanced-algo/) - 狀態：✅ 已修畢
-      
-      🔹 [計算機結構 (Comp Arch)](/posts/comp-arch/) - 狀態：🔄 修課中
-      
-      **研究計畫：**
-      
-      🔸 [k-SAT Lower Bounds](/posts/paper-ksat/) - 論文研讀中
-      
-      👇 下方是最近更新的筆記列表
+        歡迎來到 oxolll 的研究筆記。
+        
+        **核心課程與進度：**
+        
+        🔹 [高等演算法 (Advanced Algo)](/posts/advanced-algo/) - 狀態：✅ 已修畢
+        
+        🔹 [計算機結構 (Comp Arch)](/posts/comp-arch/) - 狀態：🔄 修課中
+        
+        **研究計畫：**
+        
+        🔸 [k-SAT Lower Bounds](/posts/paper-ksat/) - 論文研讀中
+        
+        👇 下方是最近更新的筆記列表
 
 # 右上角的選單設定
 menu:

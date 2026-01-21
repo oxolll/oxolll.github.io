@@ -1,5 +1,24 @@
 +++
 date = '2026-01-21T17:06:04+08:00'
-draft = true
-title = 'Master Roadmap'
+draft = false
+title = '碩士生涯規畫 (Master's Roadmap)'
+weight= 1
+tags= ["Roadmap", "Plan"]
 +++
+## 👨‍💻 個人簡介
+這裡寫你的自我介紹。例如：
+我是 oxolll，目前就讀於 XX 大學資工所。主要研究興趣為計算複雜度 (Computational Complexity) 與演算法分析。本頁面紀錄我的碩士修課歷程與研究進度。
+
+## 📅 碩一上 (Year 1 Semester 1)
+
+### 核心課程
+* **[高等演算法 (Advanced Algorithms)](/posts/advanced-algo)** * 狀態：✅ 已修畢
+    * 重點：NP-Completeness, Approximation Algorithms
+* **[計算機結構 (Computer Architecture)](/posts/comp-arch)**
+    * 狀態：🔄 修課中
+
+### 研究計畫
+* [論文研讀：k-SAT Lower Bounds](/posts/paper-ksat)
+
+## 📅 碩一下 (Year 1 Semester 2)
+* (規劃中...)

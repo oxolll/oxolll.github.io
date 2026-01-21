@@ -1,8 +1,9 @@
-+++
-date = '2026-01-21T17:08:19+08:00'
-draft = true
-title = 'Advanced Algo'
-+++
+---
+title: "Advanced Algo"
+date: 2026-01-21T17:08:19+08:00
+draft: false 
+tags: ["Course"]
+---
 
 ## 課程大綱
 這門課主要探討...

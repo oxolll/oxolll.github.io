@@ -1,0 +1,51 @@
+baseURL: "https://oxolll.github.io/"
+languageCode: "zh-tw"
+title: "My Research Notes"
+theme: "PaperMod"
+
+enableInlineShortcodes: true
+
+# 讓首頁顯示完整的 HTML (讓連結可以點)
+# 如果不加這行，摘要會濾掉 HTML
+enableEmoji: true
+
+params:
+  # 數學公式支援 (一定要開)
+  math: true
+  defaultTheme: "auto"
+  ShowToc: true
+  
+  # 首頁置頂資訊區 (Home Info Mode)
+  # 這就是你要的：文字 -> 連結 -> 文字
+  homeInfoParams:
+    Title: "碩士生涯規畫 🗺️"
+    Content: >
+      歡迎來到 oxolll 的研究筆記。
+      
+      **核心課程與進度：**
+      
+      🔹 [高等演算法 (Advanced Algo)](/posts/advanced-algo/) - 狀態：✅ 已修畢
+      
+      🔹 [計算機結構 (Comp Arch)](/posts/comp-arch/) - 狀態：🔄 修課中
+      
+      **研究計畫：**
+      
+      🔸 [k-SAT Lower Bounds](/posts/paper-ksat/) - 論文研讀中
+      
+      👇 下方是最近更新的筆記列表
+
+# 右上角的選單設定
+menu:
+  main:
+    - identifier: categories
+      name: 分類
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 標籤
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: 歸檔
+      url: /archives/
+      weight: 30

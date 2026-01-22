@@ -1,6 +1,6 @@
 baseURL: "https://oxolll.github.io/"
 languageCode: "zh-tw"
-title: "My Research Notes"
+title: "CYH's blog"
 theme: "PaperMod"
 
 enableInlineShortcodes: true
@@ -77,7 +77,7 @@ params:
 
       <br><br>
 
-      碩士後半時間，我都再研讀論文跟做ㄧ些題目，以下會列出我所看過的書籍/論文(照時間先後列出)，並說明我碩士後半做了哪些題目。
+      碩士後半時間，我都在研讀論文跟做ㄧ些實驗，以下會列出我所看過的書籍/論文(照時間先後列出)，並說明我碩士後半做了哪些實驗。
 
       <br>
 
@@ -139,6 +139,18 @@ menu:
       name: 歸檔
       url: /archives/
       weight: 30
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 40
+    - identifier: projects
+      name: 專案
+      url: /projects/
+      weight: 50
+    - identifier: profile
+      name: 關於我
+      url: /profile/
+      weight: 60
 
 # 👇 關鍵修正：一定要加這段，<br> 才會生效！
 markup:

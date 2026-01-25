@@ -1,8 +1,14 @@
 ---
 date: 2026-01-23T04:12:37+08:00
 draft: false
-title: "碩士研究簡介"
+title: "🎓 碩士研究簡介"
 weight: 2
+ShowToc: false       # 👈 關鍵 1：這行設為 false 就能關掉上方的目錄
+# categories: [""]
+tags: ["posts"]
+# _build:
+#     list: never
+#     render: always
 ---
 
 碩士後半時間，我都在研讀論文跟做ㄧ些實驗，以下會列出我所看過的書籍/論文(照時間先後列出)，並說明我碩士後半做了哪些實驗。
@@ -49,3 +55,18 @@ weight: 2
 🔸 [Local Enumeration: The Not-All-Equal Case](/papers/Local_Enumeration__The_Not_All_Equal_Case/) - Mohit Gurumukhani, Ramamohan Paturi, Michael Saks and Navid Talebanfard (2025)
 
 <br>
+
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

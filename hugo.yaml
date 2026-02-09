@@ -1,6 +1,6 @@
 baseURL: "https://oxolll.github.io/"
 languageCode: "zh-tw"
-title: "CYH's blog"
+title: "CYH's Blog"
 theme: "PaperMod"
 
 enableInlineShortcodes: true
@@ -11,9 +11,23 @@ params:
   defaultTheme: "auto"
   ShowToc: true
   
+  # 首頁 Hero 區塊設定
   homeInfoParams:
-    Title: "CYH 的學習歷程 🗺️"
+    Title: "Hi there, I'm CYH 👋"
     Content: |
+      <div style="font-size: 16px; line-height: 1.8; color: var(--secondary);">
+        歡迎來到我的個人知識庫。
+        <br>
+        這裡主要記錄我在 <strong>國立陽明交通大學 (NYCU)</strong> 的碩士研究歷程，以及對 <strong>理論計算機科學 (TCS)</strong> 與 <strong>演算法</strong> 的探索筆記。
+        <br><br>
+        主要收錄內容包含：
+        <ul style="margin-top: 5px; padding-left: 20px;">
+          <li>📚 <strong>文章 (Posts)</strong>：深度理論解析與碩士心路歷程。</li>
+          <li>🛠️ <strong>專案 (Projects)</strong>：碩士論文 (Circuit Complexity) 與實作紀錄。</li>
+          <li>💻 <strong>解題 (LeetCode)</strong>：演算法與資料結構的修煉筆記。</li>
+        </ul>
+      </div>
+
       <script>
         MathJax = {
           tex: {
@@ -24,46 +38,41 @@ params:
         };
       </script>
       <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      歡迎來到 CYH 的網站。 我大學就讀國立金門大學，畢業後經由考試入學錄取國立陽明交通大學數據工程與科學研究所就讀，歷時3.5年的碩士生涯後於2026年1月畢業。
-      寫這個網站的初衷為記錄自己經歷，以便讓人更清楚我的學習歷程!
-      
-      <br>
 
-      
-
-      
-
-      👇 下方是最近更新的筆記列表
-
-# 右上角的選單設定
+# 右上角的選單設定 (依照重要性排序)
 menu:
   main:
-    - identifier: categories
-      name: 分類
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: 標籤
-      url: /tags/
-      weight: 20
-    - identifier: archives
-      name: 歸檔
-      url: /archives/
-      weight: 30
-    - identifier: posts
-      name: 文章
-      url: /posts/
-      weight: 40
-    - identifier: projects
-      name: 專案
-      url: /projects/
-      weight: 50
+    # 1. 關於我 - 門面
     - identifier: profile
       name: 關於我
       url: /profile/
-      weight: 60
+      weight: 10
+    
+    # 2. 專案 - 展示碩論與實作 (最重要)
+    - identifier: projects
+      name: 專案
+      url: /projects/
+      weight: 20
+    
+    # 3. 文章 - 展示理論深度
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 30
+      
+    # 4. LeetCode - 展示基本功 (新增這個!)
+    - identifier: leetcode
+      name: 解題
+      url: /leetcode/
+      weight: 40
+      
+    # 5. 標籤 - 快速索引
+    - identifier: tags
+      name: 標籤
+      url: /tags/
+      weight: 50
 
-# 👇 關鍵修正：一定要加這段，<br> 才會生效！
+# 👇 關鍵修正：允許 HTML 生效
 markup:
   goldmark:
     renderer:

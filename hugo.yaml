@@ -8,8 +8,11 @@ enableEmoji: true
 
 params:
   math: true
-  defaultTheme: "auto"
-  ShowToc: true
+  # 1. 強制預設為深色模式
+  defaultTheme: "dark"
+
+  # 2. 隱藏右上角的切換按鈕 (Sun/Moon Toggle)
+  disableThemeToggle: true
   
   # 首頁 Hero 區塊設定
   homeInfoParams:
@@ -24,7 +27,7 @@ params:
         <ul style="margin-top: 5px; padding-left: 20px;">
           <li>📚 <strong>文章 (Posts)</strong>：深度理論解析與碩士心路歷程。</li>
           <li>🛠️ <strong>專案 (Projects)</strong>：碩士論文 (Circuit Complexity) 與實作紀錄。</li>
-          <li>💻 <strong>解題 (LeetCode)</strong>：演算法與資料結構的修煉筆記。</li>
+          <li>💻 <strong>解題 (Algorithm)</strong>：演算法與資料結構的修煉筆記。</li>
         </ul>
       </div>
 
@@ -63,7 +66,7 @@ menu:
     # 4. LeetCode - 展示基本功 (新增這個!)
     - identifier: leetcode
       name: 解題
-      url: /leetcode/
+      url: /algorithm/
       weight: 40
       
     # 5. 標籤 - 快速索引

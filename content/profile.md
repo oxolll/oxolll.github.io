@@ -110,11 +110,22 @@ _build:
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 10px 20px;
-        border-radius: 50px;
-        font-weight: bold;
+        gap: 10px; /* 圖示跟文字的距離 */
+        
+        padding: 12px 28px;     /* 更舒適的內距 */
+        border-radius: 50px;    /* 膠囊形狀 */
+        font-weight: 600;
+        font-size: 15px;
         text-decoration: none !important;
-        transition: all 0.2s;
+        
+        /* 基礎：半透明毛玻璃 */
+        background: rgba(30, 30, 35, 0.6); 
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        color: #ccc; /* 預設灰字 */
+        
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     .btn-home {
         background-color: transparent;
@@ -122,8 +133,11 @@ _build:
         border: 2px solid var(--accent-blue);
     }
     .btn-home:hover {
-        background-color: var(--accent-blue);
-        color: #111;
+        background: rgba(102, 217, 239, 0.15); /* 淡淡的藍底 */
+        border-color: #66d9ef;                 /* 藍色邊框 */
+        color: #fff;
+        box-shadow: 0 5px 20px rgba(102, 217, 239, 0.3); /* 藍色光暈 */
+        transform: translateY(-3px);
     }
     .btn-email {
         background-color: #e74c3c;
@@ -131,8 +145,11 @@ _build:
         border: 2px solid #e74c3c;
     }
     .btn-email:hover {
-        background-color: #c0392b;
-        border-color: #c0392b;
+        background: rgba(231, 76, 60, 0.15); /* 淡淡的紅底 */
+        border-color: #e74c3c;               /* 紅色邊框 */
+        color: #fff;
+        box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3); /* 紅色光暈 */
+        transform: translateY(-3px);
     }
 </style>
 
@@ -334,8 +351,8 @@ _build:
 
 <div class="profile-section">
     <div class="section-title">📫 聯絡我 (Contact)</div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
-        <div>
+    <div class="content-card" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+        <div style="flex: 1; min-width: 260px;">
             <div class="contact-row">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 <span>
@@ -351,12 +368,10 @@ _build:
                 <span><a href="https://www.linkedin.com/in/你的ID" target="_blank">LinkedIn Profile</a></span>
             </div>
         </div>
-        <div style="display: flex; flex-direction: column; justify-content: center; gap: 15px;">
+        <div>
              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=oxolll58x85@gmail.com&su=來自網站的聯絡" target="_blank" class="action-btn btn-email">
-                ✉️ 寫信給我 (Email Me)
-            </a>
-            <a href="/" class="action-btn btn-home">
-                🏠 回到首頁 (Home)
+                <span>✉️</span> 
+                <span>Email Me</span>
             </a>
         </div>
     </div>

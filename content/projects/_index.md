@@ -11,6 +11,20 @@ _build:
 ---
 
 <style>
+    html, body {
+        background-color: #111 !important;
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px) !important;
+        background-size: 40px 40px !important;
+        background-attachment: fixed !important; 
+        min-height: 100vh;
+    }
+
+    .main {
+        background: transparent !important;
+    }
+    
     :root {
         --accent-blue: #66d9ef;
         --accent-yellow: #e6db74;

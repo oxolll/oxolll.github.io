@@ -5,6 +5,20 @@ title: '📚 文章與技術筆記'
 ---
 
 <style>
+    html, body {
+        background-color: #111 !important;
+        background-image: 
+            linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px) !important;
+        background-size: 40px 40px !important;
+        background-attachment: fixed !important; 
+        min-height: 100vh;
+    }
+
+    .main {
+        background: transparent !important;
+    }
+
     :root {
         --accent-blue: #66d9ef;
         --accent-yellow: #e6db74;
@@ -75,6 +89,28 @@ title: '📚 文章與技術筆記'
         margin: 30px 0;
         opacity: 0.5;
     }
+    /* 針對這個頁面的卡片，強制改用「琥珀金」配色 */
+    
+    /* Hover 時的邊框與光暈 */
+    .post-entry:hover {
+        /* 琥珀金邊框 */
+        border-color: rgba(255, 184, 108, 0.9) !important; 
+        
+        /* 溫暖的金色光暈 */
+        box-shadow: 0 8px 30px rgba(255, 184, 108, 0.25) !important;
+        
+        transform: translateY(-4px) !important;
+    }
+
+    /* 標題文字也變金色 */
+    .post-entry:hover .entry-title a {
+        color: #ffb86c !important; /* Pastel Orange */
+    }
+
+    /* (選用) 讓專案卡片比文章卡片稍微大一點，更有份量感 */
+    .post-entry {
+        border-width: 1px;
+    }
 </style>
 
 <div class="intro-text">
@@ -82,7 +118,7 @@ title: '📚 文章與技術筆記'
         歡迎來到我的知識庫。這裡收錄了我在碩士生涯與技術探索過程中的<strong>深度筆記</strong>與<strong>心得文章</strong>。
     </p>
     <p>
-        這裡的文章不同於 <a href="/leetcode/" class="highlight-link">💻 LeetCode 解題區</a> 的「單題實作紀錄」，而是更著重於 <strong>「演算法背後的理論脈絡」</strong>、<strong>「技術難點的解決思路」</strong> 以及 <strong>「系統性的學習筆記」</strong>。內容主要涵蓋以下三大領域：
+        這裡的文章不同於 <a href="/algorithm/" class="highlight-link">💻 解題區</a> 的「單題實作紀錄」，而是更著重於 <strong>「演算法背後的理論脈絡」</strong>、<strong>「技術難點的解決思路」</strong> 以及 <strong>「系統性的學習筆記」</strong>。內容主要涵蓋以下三大領域：
     </p>
 </div>
 
@@ -102,7 +138,7 @@ title: '📚 文章與技術筆記'
         <div class="cat-desc">
             針對特定的資料結構與演算法進行深度解析 (如 KMP 原理、紅黑樹機制)。
             <br>
-            <span style="font-size: 12px; color: #888;">* 若尋找特定的刷題代碼與模板，請前往 <a href="/leetcode/" style="color: #888; text-decoration: underline;">LeetCode 解題區</a>。</span>
+            <span style="font-size: 12px; color: #888;">* 若尋找特定的刷題代碼與模板，請前往 <a href="/algorithm/" style="color: #888; text-decoration: underline;">LeetCode 解題區</a>。</span>
         </div>
     </div>
     <div class="cat-card">

@@ -1,0 +1,202 @@
+/* ========================================================
+   0. 引入質感字體 (Google Fonts) - 請放在檔案最第一行
+   ======================================================== */
+/* 引入 Inter (英文)、Noto Sans TC (繁中)、JetBrains Mono (程式碼) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+/* ========================================================
+   1. 全站通用背景 (Global Background)
+   ======================================================== */
+html, body {
+    /* 套用新字體：英文優先，中文在後 */
+    font-family: 'Inter', 'Noto Sans TC', sans-serif !important;
+    
+    background-color: #111 !important;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px) !important;
+    background-size: 40px 40px !important;
+    background-attachment: fixed !important;
+    min-height: 100vh;
+}
+
+/* 讓主要容器透明 */
+.main, .list, .page-header {
+    background: transparent !important;
+}
+
+/* ========================================================
+   2. 首頁個人資訊卡片美化 (Home Info Box)
+   ======================================================== */
+.first-entry {
+    background: rgba(30, 30, 35, 0.75) !important; /* 稍微深一點增加對比 */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;       /* 圓角加大一點 */
+    padding: 40px;             /* 內距加大，讓版面更透氣 */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    margin-bottom: 40px;
+}
+
+/* --- 標題美化 (解決單調問題) --- */
+.first-entry h1 {
+    font-family: 'Inter', sans-serif; /* 標題用英文專屬字體比較帥 */
+    font-weight: 800;      /* 極粗體 */
+    font-size: 2.8rem;     /* 字體加大 */
+    margin-bottom: 25px;
+    color: #fff !important;
+    letter-spacing: -1px;  /* 字距微縮，更緊湊 */
+    
+    /* 替代方案：不破壞 Emoji 的發光特效 */
+    text-shadow: 0 0 25px rgba(102, 217, 239, 0.5); 
+}
+
+/* --- 內文排版優化 --- */
+.first-entry .entry-content {
+    font-size: 1.1rem;      /* 內文稍微大一點 */
+    line-height: 1.9;       /* 行高拉開，閱讀更舒適 */
+    color: #d4d4d4;         /* 次要文字用柔和的灰 */
+    font-weight: 400;
+}
+
+/* --- 關鍵字高亮 (Magic!) --- */
+/* 這會把你 html 裡面的 <strong> 標籤變成亮藍色 */
+.first-entry strong {
+    color: #66d9ef !important; /* 主題藍 */
+    font-weight: 700;
+    background: rgba(102, 217, 239, 0.1); /* 淡淡的藍底 */
+    padding: 0 4px;        /* 左右留白 */
+    border-radius: 4px;    /* 圓角 */
+}
+
+/* --- 列表優化 --- */
+.first-entry ul li {
+    margin-bottom: 12px; /* 列表項目分開一點 */
+    font-size: 1.05rem;
+}
+
+/* ========================================================
+   3. 頂部導覽列：懸浮膠囊風格
+   ======================================================== */
+/* (這部分維持你原本的代碼，無需更動，貼上你原本有的即可) */
+.header {
+    background: transparent !important;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding-top: 20px;
+    border-bottom: none !important;
+}
+
+.nav {
+    background: rgba(30, 30, 35, 0.8) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.nav a { color: #eee !important; font-weight: 500; transition: color 0.3s ease; }
+.logo a { font-size: 20px; font-weight: 800; text-shadow: 0 0 10px rgba(255, 255, 255, 0.2); }
+#menu .menu-item { margin-left: 5px; padding: 5px 10px; border-radius: 15px; transition: all 0.2s; }
+#menu .menu-item:hover { color: #66d9ef !important; background: rgba(102, 217, 239, 0.1); }
+.menu li.active a { color: #66d9ef !important; font-weight: bold; }
+
+/* ========================================================
+   4. 文章列表卡片美化 (移植 LeetCode 光暈特效)
+   ======================================================== */
+
+/* --- assets/css/extended/custom.css --- */
+
+/* 預設：科技霓虹藍 (適用於文章、標籤頁) */
+.post-entry {
+    background: rgba(30, 30, 35, 0.6) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Hover 變藍色 */
+.post-entry:hover {
+    border-color: rgba(102, 217, 239, 0.8) !important; 
+    box-shadow: 0 8px 25px rgba(102, 217, 239, 0.25);
+    transform: translateY(-3px);
+}
+
+.post-entry:hover .entry-title a {
+    color: #66d9ef !important;
+}
+
+/* (選項) 讓卡片裡的標題連結在 hover 時也變色 */
+.post-entry:hover .entry-title a {
+    color: #ffa116 !important; /* LeetCode 橘 */
+}
+
+/* ========================================================
+   5. 文章底部導航按鈕 (Post Bottom Navigation)
+   ======================================================== */
+
+/* 容器：讓兩個按鈕並排且置中 */
+.post-bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;              /* 按鈕之間的距離 */
+    margin-top: 60px;       /* 跟文章內容保持距離 */
+    margin-bottom: 40px;
+    flex-wrap: wrap;        /* 手機版自動換行 */
+}
+
+/* 按鈕基礎樣式 (科技膠囊風) */
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    background: rgba(30, 30, 35, 0.6); /* 半透明深底 */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 25px;
+    border-radius: 50px;    /* 膠囊形狀 */
+    
+    color: #ccc !important; /* 預設灰字 */
+    text-decoration: none !important; /* 去除底線 */
+    font-size: 15px;
+    font-weight: 500;
+    
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    backdrop-filter: blur(5px);
+}
+
+/* --- 按鈕 1: 回首頁 (Home) --- */
+.home-btn:hover {
+    color: #fff !important;
+    border-color: #66d9ef; /* 科技藍邊框 */
+    background: rgba(102, 217, 239, 0.1);
+    box-shadow: 0 5px 20px rgba(102, 217, 239, 0.3); /* 藍色光暈 */
+    transform: translateY(-3px);
+}
+
+/* --- 按鈕 2: 回分類 (Category) --- */
+.cat-btn:hover {
+    color: #fff !important;
+    border-color: #f92672; /* 霓虹粉邊框 (跟你的 Cyberpunk 風格搭配) */
+    background: rgba(249, 38, 114, 0.1);
+    box-shadow: 0 5px 20px rgba(249, 38, 114, 0.3); /* 粉色光暈 */
+    transform: translateY(-3px);
+}
+
+/* 手機版微調：按鈕佔滿寬度 */
+@media (max-width: 480px) {
+    .nav-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

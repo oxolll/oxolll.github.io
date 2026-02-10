@@ -55,12 +55,22 @@
       {{ end }}
   </div>
   <footer class="post-footer">
-    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    {{- /* 1. 抓取分類 (Categories) */}}
+    {{- $categories := .Language.Params.Taxonomies.category | default "categories" }}
     <ul class="post-tags">
+      {{- range ($.GetTerms $categories) }}
+      {{- /* 這裡給分類一個特殊的 style，讓它跟 tag 稍微區隔，例如加個資料夾圖示 */ -}}
+      <li><a href="{{ .Permalink }}">📂 {{ .LinkTitle }}</a></li>
+      {{- end }}
+      
+      {{- /* 2. 抓取標籤 (Tags) - 這是原本的 */}}
+      {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
       {{- range ($.GetTerms $tags) }}
-      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      <li><a href="{{ .Permalink }}">🏷️ {{ .LinkTitle }}</a></li>
       {{- end }}
     </ul>
+
+    {{- /* 下面維持原本的分享按鈕與上一篇/下一篇 */ -}}
     {{- if (.Param "ShowPostNavLinks") }}
     {{- partial "post_nav_links.html" . }}
     {{- end }}

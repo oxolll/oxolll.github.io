@@ -2,10 +2,11 @@
 date: 2026-01-23T04:28:06+08:00
 draft: false
 title: "🧟 軟體測試-2D遊戲"
+categories: ["Life & Misc"]
+tags: ["Software Testing", "Portfolio", "Master"]
+keywords: ["Pygame", "Unit Testing", "CACC", "軟體測試", "碩士紀錄"]
 weight: 3
 ShowToc: false       # 👈 關鍵 1：這行設為 false 就能關掉上方的目錄
-# categories: [""]
-# tags: ["posts"]
 # _build:
 #     list: never
 #     render: always

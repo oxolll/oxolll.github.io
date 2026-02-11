@@ -2,6 +2,9 @@
 date: 2026-01-23T04:27:18+08:00
 draft: false
 title: "🎓 碩士論文"
+categories: ["TCS & Research"]
+tags: ["Complexity", "Circuit", "Research", "Master"]
+keywords: ["三層電路下界", "Majority", "Local Enumeration", "計算複雜度", "陽明交大"]
 weight: 1
 ---
 

@@ -4,7 +4,9 @@ date: 2026-01-21T17:08:19+08:00
 draft: false 
 hidden: true
 ShowToc: false
-tags: ["posts"]
+categories: ["Life & Misc"]
+tags: ["Career", "Master", "NYCU", "Review"]
+keywords: ["陽明交通大學", "修課心得", "研究生", "GPA", "學分", "NYCU CS"]
 weight: 1
 ---
 

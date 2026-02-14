@@ -38,11 +38,18 @@
 </div>
 {{- end }}
 
+{{- /* --- 1. 抓取所有文章 --- */ -}}
 {{- $pages := union .RegularPages .Sections }}
 
+{{- /* --- 2. [修正] 強制過濾隱藏文章 (不管是不是首頁都執行) --- */ -}}
+{{- /* 過濾布林值 true */ -}}
+{{- $pages = where $pages "Params.hiddeninhomelist" "!=" true }}
+{{- /* 過濾字串 "true" (防呆) */ -}}
+{{- $pages = where $pages "Params.hiddeninhomelist" "!=" "true" }}
+
 {{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true"  }}
+    {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{- /* 這裡可以放針對「純首頁」的額外過濾，但上面的過濾已經全域生效了 */ -}}
 {{- end }}
 
 {{- $paginator := .Paginate $pages }}
@@ -54,11 +61,9 @@
 {{- $term := .Data.Term }}
 {{- range $index, $page := $paginator.Pages }}
 
-{{- /* 1. 初始化變數：顏色預設為白色，難度設為空 */ -}}
+{{- /* --- 3. 計算難度顏色 --- */ -}}
 {{- $diffColor := "#ffffff" -}}
 {{- $rating := .Params.difficulty -}}
-
-{{- /* 2. 只有當文章確實填寫了 difficulty 時才計算顏色 */ -}}
 {{- if $rating -}}
     {{- $min := 1200.0 -}}
     {{- $max := 2500.0 -}}
@@ -66,34 +71,40 @@
     {{- if gt $p 1.0 }}{{ $p = 1.0 }}{{ end -}}
     {{- if lt $p 0.0 }}{{ $p = 0.0 }}{{ end -}}
     {{- $hue := sub 120 (mul $p 120) -}}
-    {{- /* 注意：這裡使用 "=" 進行賦值，確保能更新外部變數 */ -}}
     {{- $diffColor = printf "hsl(%.0f, 100%%, 45%%)" $hue -}}
 {{- end -}}
 
-{{- /* 3. 處理卡片樣式類別 */ -}}
+{{- /* --- 4. [修正] 卡片類別判斷 (Project 光暈 + 標籤頁 + 首頁特效) --- */ -}}
 {{- $class := "post-entry" -}}
+
+{{- /* A. 專案判定 (讓 Project 發青光) */ -}}
+{{- if in .Params.categories "Project" -}}
+    {{- $class = printf "%s project-entry" $class -}}
+{{- end -}}
+
+{{- /* B. 分類頁面判定 (累加標籤) */ -}}
+{{- if $term -}}
+    {{- $class = printf "%s tag-entry" $class -}}
+{{- end -}}
+
+{{- /* C. 首頁第一篇判定 */ -}}
 {{- $user_preferred := or site.Params.disableSpecial1stPost site.Params.homeInfoParams -}}
 {{- if (and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) (not $user_preferred)) -}}
     {{- $class = "first-entry" -}}
-{{- else if $term -}}
-    {{- $class = "post-entry tag-entry" -}}
 {{- end -}}
 
-{{- /* --- 3. [修改] 在 article 注入 CSS 變數 --diff-color --- */ -}}
 <article class="{{ $class }}" style="--diff-color: {{ $diffColor | safeCSS }};">
   {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
   {{- partial "cover.html" (dict "cxt" . "IsSingle" false "isHidden" $isHidden) }}
   <header class="entry-header">
     <h2 class="entry-hint-parent">
-      {{- /* --- 3. [修改] 標題文字引用顏色變數 --- */ -}}
       <span style="color: var(--diff-color); transition: color 0.3s ease;">
         {{- .Title }}
       </span>
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+          <path d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
         </svg>
       </span>
       {{- end }}
@@ -102,7 +113,6 @@
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    {{- /* --- [新增] 讓摘要中的數字也同步變色 --- */ -}}
     <p style="font-size: 0.9rem; margin-top: 5px;">
         難度評分：<span style="color: var(--diff-color); font-weight: bold;">{{ $rating }}</span>
     </p>

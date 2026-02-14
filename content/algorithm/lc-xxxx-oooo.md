@@ -2,6 +2,7 @@
 title: "🧩 LeetCode {題號}. {英文題目名稱}"
 # date: {YYYY-MM-DD}T{HH:MM}:00+08:00
 # lastmod: {YYYY-MM-DD}T{HH:MM}:00+08:00
+# difficulty: xxxx
 draft: true
 hidden: false
 # --- 目錄設定 ---
@@ -17,7 +18,7 @@ math: true
 
 ## 📊 題目資訊
 <!-- > **題目連結**：[LeetCode {題號}](https://leetcode.com/problems/{url-slug}/)   -->
-<!-- > **難度評分**：<span style="color: #feb019; font-weight: bold;">{分數}</span> (Medium)   -->
+<!-- > **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">{分數}</span> (Medium)   -->
 <!-- > **核心主題**：`{Topic1}` $\cdot$ `{Topic2}` $\cdot$ `{Topic3}` -->
 
 ---

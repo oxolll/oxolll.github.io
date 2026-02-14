@@ -1,7 +1,7 @@
 ---
 title: "🧩 LeetCode 3714. Longest Balanced Substring II"
-date: 2026-02-14T00:20:00+08:00
-lastmod: 2026-02-14T10:30:00+08:00
+date: 2026-02-13T00:20:00+08:00
+lastmod: 2026-02-13T10:30:00+08:00
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -10,7 +10,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["Algorithm"]
-tags: ["LeetCode", "Hash Table", "Prefix Sum", "Case Analysis"]
+tags: ["LeetCode", "Hash Table", "Prefix Sum", "Case Analysis", "string"]
 keywords: ["LC3714", "2201", "平衡子字串", "Vector Optimization"]
 description: "LeetCode 第 3714 題：Longest Balanced Substring II。難度評分：2201。探討如何透過分類討論與 Vector 偏移優化來加速平衡子字串的查找。"
 ---

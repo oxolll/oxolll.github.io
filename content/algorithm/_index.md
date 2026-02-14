@@ -252,7 +252,9 @@ layout: "list"
     <div class="filter-label">
         <span>🧭 快速篩選 (Tags):</span>
     </div> 
-    <a href="/tags/dp/" class="mini-tag">Dynamic Programming</a>
+    <a href="/tags/leetcode/" class="mini-tag">Leetcode</a>
+    <a href="/tags/codeforce/" class="mini-tag">Codeforces</a>
+    <a href="/tags/atcoder/" class="mini-tag">AtCoder</a>
     <a href="/tags/graph/" class="mini-tag">Graph</a>
     <a href="/tags/math/" class="mini-tag">Math</a>
     <a href="/tags/segment-tree/" class="mini-tag">Segment Tree</a>
@@ -260,6 +262,11 @@ layout: "list"
     <a href="/tags/greedy/" class="mini-tag">Greedy</a>
     <a href="/tags/binary-search/" class="mini-tag">Binary Search</a>
     <a href="/tags/two-pointers/" class="mini-tag">Two Pointers</a>
+    <a href="/tags/simulation/" class="mini-tag">Simulation</a>
+    <a href="/tags/string/" class="mini-tag">String</a>
+    <a href="/tags/prefix-sum/" class="mini-tag">Prefix Sum</a>
+    <a href="/tags/hash-table/" class="mini-tag">Hash Table</a>
+    <a href="/tags/case-analysis/" class="mini-tag">Case Analysis</a>
 </div>
 
 <div style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">

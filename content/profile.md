@@ -365,7 +365,7 @@ _build:
             </div>
             <div class="contact-row">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ccc" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                <span><a href="https://www.linkedin.com/in/你的ID" target="_blank">LinkedIn Profile</a></span>
+                <span><a href="https://www.linkedin.com/in/chen-yu-hung-360235248/" target="_blank">LinkedIn Profile</a></span>
             </div>
         </div>
         <div>

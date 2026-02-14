@@ -263,6 +263,7 @@ layout: "list"
     <a href="/tags/leetcode/" class="mini-tag">Leetcode</a>
     <a href="/tags/codeforce/" class="mini-tag">Codeforces</a>
     <a href="/tags/atcoder/" class="mini-tag">AtCoder</a>
+    <a href="/tags/dynamic-programming/" class="mini-tag">Dynamic Programming</a>
     <a href="/tags/graph/" class="mini-tag">Graph</a>
     <a href="/tags/math/" class="mini-tag">Math</a>
     <a href="/tags/segment-tree/" class="mini-tag">Segment Tree</a>

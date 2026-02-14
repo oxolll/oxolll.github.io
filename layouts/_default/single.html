@@ -1,10 +1,34 @@
 {{- define "main" }}
 
-<article class="post-single">
+{{- /* 1. 預設顏色初始化為白色 */ -}}
+{{- $diffColor := "#ffffff" -}}
+
+{{- /* 2. 嚴格檢查：只有當文章 Front Matter 有 difficulty 欄位時才計算顏色 */ -}}
+{{- if .Params.difficulty -}}
+    {{- $rating := float .Params.difficulty -}}
+    {{- $min := 1200.0 -}}
+    {{- $max := 2500.0 -}}
+    
+    {{- /* 計算線性插值比例 P */ -}}
+    {{- $p := div (sub $rating $min) (sub $max $min) -}}
+    {{- if gt $p 1.0 }}{{ $p = 1.0 }}{{ end -}}
+    {{- if lt $p 0.0 }}{{ $p = 0.0 }}{{ end -}}
+    
+    {{- /* HSL 公式：Hue = 120 - (P * 120) */ -}}
+    {{- $hue := sub 120.0 (mul $p 120.0) -}}
+    {{- $diffColor = printf "hsl(%.0f, 100%%, 45%%)" $hue -}}
+{{- end -}}
+
+{{- /* 2. [修改] 在 article 加上 style 注入 CSS 變數 --diff-color */ -}}
+<article class="post-single" style="--diff-color: {{ $diffColor | safeCSS }};">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title entry-hint-parent">
-      {{ .Title }}
+      {{- /* 3. [修改] 標題直接引用 CSS 變數 */ -}}
+      <span style="color: var(--diff-color); transition: color 0.3s ease;">
+        {{ .Title }}
+      </span>
+
       {{- if .Draft }}
       <span class="entry-hint" title="Draft">
         <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
@@ -41,6 +65,7 @@
     {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
+
   <div class="post-bottom-nav">
       <a href="{{ "" | absURL }}" class="nav-btn home-btn">
           <span class="icon">🏠</span>

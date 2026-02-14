@@ -1,7 +1,8 @@
 ---
-title: "🧩 LeetCode 3713. Longest Balanced Substring I"
+title: "LeetCode 3713. Longest Balanced Substring I"
 date: 2026-02-12T19:40:00+08:00
 lastmod: 2026-02-12T20:00:00+08:00
+difficulty: 1490
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -17,7 +18,7 @@ description: "LeetCode 第 3713 題：Longest Balanced Substring I。難度評�
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3713](https://leetcode.com/problems/longest-balanced-substring-i/)  
-> **難度評分**：<span style="color: #feb019; font-weight: bold;">1490</span> (Medium)  
+> **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">1490</span> (Medium)  
 > **核心主題**：`Prefix Sum` $\cdot$ `Greedy` $\cdot$ `String`
 
 ---

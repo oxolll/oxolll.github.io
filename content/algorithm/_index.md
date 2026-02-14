@@ -203,13 +203,21 @@ layout: "list"
     }
 
     /* 👇 新增：讓這裡的文章卡片變成「駭客綠」 */
+    /* 修改 index.md 內的這段 */
     .post-entry:hover {
-        border-color: rgba(166, 226, 46, 0.9) !important; 
-        box-shadow: 0 8px 25px rgba(166, 226, 46, 0.25) !important;
+        /* 將原本的 rgba(166, 226, 46, ...) 改成 var(--diff-color) */
+        border-color: var(--diff-color) !important; 
+        box-shadow: 0 8px 25px var(--diff-color) !important;
+        opacity: 0.9;
+
+        /* 卡片上浮感 */
+        transform: translateY(-6px) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
-    .post-entry:hover .entry-title a {
-        color: #a6e22e !important;
+    .post-entry:hover .entry-hint-parent span {
+        color: var(--diff-color) !important;
+        text-shadow: 0 0 10px var(--diff-color);
     }
 </style>
 

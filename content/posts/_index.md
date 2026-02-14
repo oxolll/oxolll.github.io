@@ -91,25 +91,31 @@ title: '📚 文章與技術筆記'
     }
     /* 針對這個頁面的卡片，強制改用「琥珀金」配色 */
     
-    /* Hover 時的邊框與光暈 */
+
+    /* 1. 卡片懸停：琥珀金邊框與光暈 */
     .post-entry:hover {
         /* 琥珀金邊框 */
         border-color: rgba(255, 184, 108, 0.9) !important; 
         
         /* 溫暖的金色光暈 */
-        box-shadow: 0 8px 30px rgba(255, 184, 108, 0.25) !important;
+        box-shadow: 0 12px 40px rgba(255, 184, 108, 0.5) !important;
         
-        transform: translateY(-4px) !important;
+        /* 卡片上浮感 */
+        transform: translateY(-6px) !important;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
-    /* 標題文字也變金色 */
-    .post-entry:hover .entry-title a {
+    /* 2. 標題文字：懸停時強制變為琥珀金 */
+    /* 修正選擇器以符合 list.html 的 .entry-hint-parent 結構 */
+    .post-entry:hover .entry-hint-parent span {
         color: #ffb86c !important; /* Pastel Orange */
+        text-shadow: 0 0 8px rgba(255, 184, 108, 0.4);
     }
 
-    /* (選用) 讓專案卡片比文章卡片稍微大一點，更有份量感 */
+    /* 3. 基礎邊框設定 */
     .post-entry {
         border-width: 1px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     }
 </style>
 

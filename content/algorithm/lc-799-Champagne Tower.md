@@ -1,7 +1,8 @@
 ---
-title: "🧩 LeetCode 799. Champagne Tower"
+title: "LeetCode 799. Champagne Tower"
 date: 2026-02-14T16:00:00+08:00
 lastmod: 2026-02-14T16:05:00+08:00
+difficulty: 1855
 draft: false
 hidden: false
 ShowToc: true
@@ -15,7 +16,7 @@ description: "LeetCode 第 799 題：Champagne Tower。難度評分：1855。透
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 799](https://leetcode.com/problems/champagne-tower/)  
-> **難度評分**：<span style="color: #feb019; font-weight: bold;">1855</span> (Medium)
+> **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">1855</span> (Medium)  
 > **核心主題**：`Dynamic Programming` $\cdot$ `Simulation`
 
 ---

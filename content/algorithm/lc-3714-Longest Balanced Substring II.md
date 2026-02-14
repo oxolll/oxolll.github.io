@@ -1,7 +1,8 @@
 ---
-title: "🧩 LeetCode 3714. Longest Balanced Substring II"
+title: "LeetCode 3714. Longest Balanced Substring II"
 date: 2026-02-13T00:20:00+08:00
 lastmod: 2026-02-13T10:30:00+08:00
+difficulty: 2201
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -17,7 +18,7 @@ description: "LeetCode 第 3714 題：Longest Balanced Substring II。難度評�
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3714](https://leetcode.com/problems/longest-balanced-substring-ii/)  
-> **難度評分**：<span style="color: #feb019; font-weight: bold;">2201</span> (Medium)  
+> **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">2201</span> (Medium)  
 > **核心主題**：`Case Analysis` $\cdot$ `Prefix Sum` $\cdot$ `Vector Optimization`
 
 ---

@@ -1,5 +1,5 @@
 ---
-title: "🧩 LeetCode 67. Add Binary"
+title: "LeetCode 67. Add Binary"
 date: 2026-02-15T16:30:00+08:00
 lastmod: 2026-02-15T16:30:00+08:00
 difficulty: 1200

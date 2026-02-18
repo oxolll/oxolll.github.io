@@ -3,6 +3,9 @@ languageCode: "zh-tw"
 title: "CYH's Blog"
 theme: "PaperMod"
 
+author:
+  name: "CYH"
+
 enableInlineShortcodes: true
 enableEmoji: true
 metaDataFormat: "yaml"

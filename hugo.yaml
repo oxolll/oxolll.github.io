@@ -8,6 +8,7 @@ enableEmoji: true
 metaDataFormat: "yaml"
 
 params:
+  author: "CYH"
   math: true
   # 1. 強制預設為深色模式
   defaultTheme: "dark"

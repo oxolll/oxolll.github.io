@@ -11,8 +11,6 @@ weight: 2
 ### 🚀 專案傳送門
 **GitHub Repository:** [https://github.com/oxolll/priority-queue-sat-solver](https://github.com/oxolll/priority-queue-sat-solver)
 
----
-
 ## 1. 前言：為什麼不直接用 MiniSat？
 
 在理論計算機科學 (TCS) 的研究中，我們經常面對 **SAT (布爾可滿足性問題)**。雖然工業界成熟的求解器（如 MiniSat, Kissat）採用 CDCL 架構，但在特定研究場景——如**尋找極小解 (Minimal Solutions)** 或**證明電路複雜度下界**時，傳統搜尋路徑未必最佳。

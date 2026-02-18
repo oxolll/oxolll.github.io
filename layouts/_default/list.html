@@ -113,9 +113,11 @@
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    {{- if in .Params.categories "Algorithm" }}
     <p style="font-size: 0.9rem; margin-top: 5px;">
         難度評分：<span style="color: var(--diff-color); font-weight: bold;">{{ $rating }}</span>
     </p>
+    {{- end }}
   </div>
   {{- end }}
   {{- if not (.Param "hideMeta") }}

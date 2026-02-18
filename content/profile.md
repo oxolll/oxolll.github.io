@@ -156,9 +156,22 @@ _build:
 <div align="center" style="margin-bottom: 40px;">
     <img src="/images/cyhIcon.png" width="180" height="180" style="border-radius: 50%; object-fit: cover; border: 4px solid #333; margin-bottom: 15px;" alt="cyh">
     <h1 style="margin: 0; font-size: 2.5rem;">cyh</h1>
-    <p style="color: var(--text-muted); font-size: 1.1rem;">
+    <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 10px;">
         M.S. in Data Science and Engineering, NYCU
     </p>
+    <div style="margin-bottom: 25px;">
+        <span style="
+            font-family: 'Times New Roman', serif; 
+            font-style: italic; 
+            font-size: 1.3rem; 
+            color: var(--accent-yellow);
+            letter-spacing: 1px;
+            position: relative;
+            padding: 0 10px;
+        ">
+            "No pain, no gain."
+        </span>
+    </div>
     <div style="max-width: 600px; margin: 20px auto; line-height: 1.6; color: #ccc; text-align: left;">
         你好，我是 <strong>cyh</strong>。我畢業於 <strong>國立陽明交通大學</strong> 數據科學與工程研究所。
         我的研究興趣主要集中在 <strong style="color: var(--accent-blue);">理論計算機科學 (TCS)</strong>，特別是演算法分析與計算複雜度理論。
@@ -203,8 +216,7 @@ _build:
             </div>
             <ul style="margin: 0; padding-left: 20px; color: #ccc; font-size: 14px; line-height: 1.6;">
                 <li>學位：學士 (Bachelor of Science)</li>
-                <!-- <li>系排：13 / 43 </li>  -->
-            </ul>
+                </ul>
         </div>
     </div>
 </div>

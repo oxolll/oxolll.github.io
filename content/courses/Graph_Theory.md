@@ -4,7 +4,7 @@ date: 2026-01-21T17:08:19+08:00
 draft: false 
 hidden: true
 tags: ["Course"]
-_build:
+build:
     list: never      # 永遠不要出現在列表 (首頁清單)
     render: always   # 但還是要產生頁面 (讓上面的連結點得進去)
 ---

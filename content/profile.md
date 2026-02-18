@@ -5,7 +5,7 @@ draft: false
 hidden: true
 ShowToc: false
 tags: ["profile"]
-_build:
+build:
     list: never
     render: always
 ---

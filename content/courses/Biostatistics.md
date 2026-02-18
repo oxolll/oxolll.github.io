@@ -5,7 +5,7 @@ draft: false
 hidden: true
 tags: ["Course"]
 ShowToc: false       # 👈 關鍵 1：這行設為 false 就能關掉上方的目錄
-_build:
+build:
     list: never      # 永遠不要出現在列表 (首頁清單)
     render: always   # 但還是要產生頁面 (讓上面的連結點得進去)
 ---

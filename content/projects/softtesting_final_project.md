@@ -7,7 +7,7 @@ tags: ["Software Testing", "Portfolio", "Master"]
 keywords: ["Pygame", "Unit Testing", "CACC", "軟體測試", "碩士紀錄"]
 weight: 3
 ShowToc: false       # 👈 關鍵 1：這行設為 false 就能關掉上方的目錄
-# _build:
+# build:
 #     list: never
 #     render: always
 ---

@@ -1,7 +1,7 @@
 ---
 date: 2026-01-23T04:27:46+08:00
 draft: false
-title: "基於 TreeSearch [Gur24] 架構之 PQ-based SAT 求解器"
+title: "🔎 基於 TreeSearch [Gur24] 架構之 PQ-based SAT 求解器"
 categories: ["TCS & Research"]
 tags: ["SAT Solver", "TreeSearch", "Algorithm", "Complexity", "Python"]
 keywords: ["SAT", "Local Enumeration", "Positive Clause", "Empty Clause", "Gur24"]

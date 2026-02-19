@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["Algorithm"]
-tags: ["LeetCode", "Binary Indexed Tree", "Segment Tree", "Math"]
+tags: ["LeetCode", "Binary Indexed Tree (Fenwick Tree)", "Segment Tree", "Math"]
 keywords: ["LC1649", "2207", "Hard", "BIT", "Fenwick Tree"]
 description: "LeetCode 第 1649 題：Create Sorted Array through Instructions。難度評分：2207。探討如何利用 Binary Indexed Tree (BIT) 的值域特徵來動態計算嚴格大於與嚴格小於的元素數量。"
 ---

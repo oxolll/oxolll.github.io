@@ -2,7 +2,7 @@
 title: "🧩 LeetCode {題號}. {英文題目名稱}"
 # date: {YYYY-MM-DD}T{HH:MM}:00+08:00
 # lastmod: {YYYY-MM-DD}T{HH:MM}:00+08:00
-# difficulty: xxxx
+# difficulty: {官方難度}
 draft: true
 hidden: false
 # --- 目錄設定 ---
@@ -17,53 +17,35 @@ math: true
 ---
 
 ## 📊 題目資訊
-<!-- > **題目連結**：[LeetCode {題號}](https://leetcode.com/problems/{url-slug}/)   -->
-<!-- > **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">{分數}</span> (Medium)   -->
-<!-- > **核心主題**：`{Topic1}` $\cdot$ `{Topic2}` $\cdot$ `{Topic3}` -->
-
 ---
 
 ## 📖 題目描述
 <details>
 <summary>🔍 <b>點擊展開題目詳情與限制</b></summary>
 
-<!-- ### 說明
-{這裡填寫簡化的中文題目說明，支援 LaTeX 如 $O(N)$}
-
-### 範例
-- **Input**: `s = "example"` → **Output**: `result`
-- **Explanation**: {簡短解釋}
-
-### 限制條件
-- $1 \le n \le 10^5$
-- {其他限制} -->
 </details>
 
 ---
 
 ## 📝 歷次打卡與更新
-<!-- - [{YYYY-MM-DD}：初次提交 ({解法名稱})](#{yyyy-mm-dd}-初次提交) -->
-
 ---
 
 ## 💡 {YYYY-MM-DD} 初次提交
 
-### 直覺 (Intuition)
-<!-- {一句話描述你的切入點，例如：因為要求連續，所以想到滑動視窗...} -->
-
-### 解題思路 (Approach)
-<!-- 1. **{步驟一}**：{描述細節}
-2. **{步驟二}**：{描述細節，可配合公式 $dp[i] = \max(...)$}
-3. **{步驟三}**：{描述細節} -->
-
+### 🎯 直覺 (Intuition)
+### 🛠️ 解題思路 (Approach)
 ### 📊 複雜度分析
-<!-- - **時間複雜度**: $O(N)$。
-- **空間複雜度**: $O(1)$。 -->
-
 ### 💻 程式碼實作 (C++)
-```cpp
-class Solution {
-public:
-    // code here 
-};
-```
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[', '\\]']],
+        processEscapes: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

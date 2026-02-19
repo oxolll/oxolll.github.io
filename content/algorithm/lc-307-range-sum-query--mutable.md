@@ -18,7 +18,7 @@ description: "LeetCode 第 307 題：Range Sum Query - Mutable。難度評分：
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 307](https://leetcode.com/problems/range-sum-query-mutable/)  
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(N/A)</span>  
+> **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">Medium(N/A)</span>  
 > **核心主題**：`Array` $\cdot$ `Design` $\cdot$ `Binary Indexed Tree` $\cdot$ `Segment Tree`
 
 ---

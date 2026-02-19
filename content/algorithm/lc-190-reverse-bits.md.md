@@ -18,7 +18,7 @@ description: "LeetCode 第 190 題：Reverse Bits。顛倒給定 32 位元無號
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 190](https://leetcode.com/problems/reverse-bits/)  
-> **難度等級**：<span style="color: #00af9b; font-weight: bold;">Easy (N/A)</span>  
+> **難度等級**：<span style="color: var(--diff-color); font-weight: bold;">Easy (N/A)</span>  
 > **核心主題**：`Bit Manipulation` $\cdot$ `Simulation`
 
 ---

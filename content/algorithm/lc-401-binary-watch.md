@@ -18,7 +18,7 @@ description: "LeetCode 第 401 題：Binary Watch。利用枚舉與位元運算 
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 401](https://leetcode.com/problems/binary-watch/)  
-> **難度等級**：<span style="color: #00af9b; font-weight: bold;">Easy(N/A)</span> 
+> **難度等級**：<span style="color: var(--diff-color); font-weight: bold;">Easy(N/A)</span> 
 > **核心主題**：`Bit Manipulation` $\cdot$ `Enumeration`
 
 ---

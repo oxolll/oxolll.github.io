@@ -18,7 +18,7 @@ description: "LeetCode 第 693 題：Binary Number with Alternating Bits。檢�
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 693](https://leetcode.com/problems/binary-number-with-alternating-bits/)  
-> **難度等級**：<span style="color: #00af9b; font-weight: bold;">Easy(N/A)</span>  
+> **難度等級**：<span style="color: var(--diff-color); font-weight: bold;">Easy(N/A)</span>  
 > **核心主題**：`Bit Manipulation`
 
 ---

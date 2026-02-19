@@ -18,7 +18,7 @@ description: "LeetCode 第 67 題：Add Binary。經典的二進位字串相加�
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 67](https://leetcode.com/problems/add-binary/)  
-> **難度等級**：<span style="color: #00af9b; font-weight: bold;">N/A (Easy)</span>  
+> **難度等級**：<span style="color: var(--diff-color); font-weight: bold;">N/A (Easy)</span>  
 > **核心主題**：`Math` $\cdot$ `String` $\cdot$ `Simulation`
 
 ---

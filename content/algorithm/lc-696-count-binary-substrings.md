@@ -18,7 +18,7 @@ description: "LeetCode 第 696 題：Count Binary Substrings。難度評分：Ea
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 696](https://leetcode.com/problems/count-binary-substrings/)  
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy(N/A)</span>  
+> **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">Easy(N/A)</span>  
 > **核心主題**：`String` $\cdot$ `Two Pointers`
 
 ---

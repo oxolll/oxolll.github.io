@@ -1,5 +1,5 @@
 ---
-title: "🧩 LeetCode 307. Range Sum Query - Mutable"
+title: "LeetCode 307. Range Sum Query - Mutable"
 date: 2026-02-19T18:47:00+08:00
 lastmod: 2026-02-19T18:47:00+08:00
 difficulty: 1650

@@ -276,6 +276,13 @@ layout: "list"
     <a href="/tags/prefix-sum/" class="mini-tag">Prefix Sum</a>
     <a href="/tags/hash-table/" class="mini-tag">Hash Table</a>
     <a href="/tags/case-analysis/" class="mini-tag">Case Analysis</a>
+    <a href="/tags/binary-indexed-tree-fenwick-tree/" class="mini-tag">Binary Indexed Tree (Fenwick Tree)</a>
+    <a href="/tags/design/" class="mini-tag">design</a>
+    <a href="/tags/counting/" class="mini-tag">counting</a>
+    <a href="/tags/segment-tree/" class="mini-tag">Segment Tree</a>
+    <a href="/tags/bit-manipulation/" class="mini-tag">Bit Manipulation</a>
+    <a href="/tags/enumeration/" class="mini-tag">Enumeration</a>
+    
 </div>
 
 <div style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">

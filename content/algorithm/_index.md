@@ -282,7 +282,7 @@ layout: "list"
     <a href="/tags/segment-tree/" class="mini-tag">Segment Tree</a>
     <a href="/tags/bit-manipulation/" class="mini-tag">Bit Manipulation</a>
     <a href="/tags/enumeration/" class="mini-tag">Enumeration</a>
-    
+    <a href="/tags/divide-and-conquer/" class="mini-tag">Divide and Conquer</a>
 </div>
 
 <div style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">

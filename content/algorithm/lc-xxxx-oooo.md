@@ -1,5 +1,5 @@
 ---
-title: "🧩 LeetCode {題號}. {英文題目名稱}"
+title: "LeetCode {題號}. {英文題目名稱}"
 # date: {YYYY-MM-DD}T{HH:MM}:00+08:00
 # lastmod: {YYYY-MM-DD}T{HH:MM}:00+08:00
 # difficulty: {官方難度}

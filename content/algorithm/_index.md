@@ -284,6 +284,7 @@ layout: "list"
     <a href="/tags/enumeration/" class="mini-tag">Enumeration</a>
     <a href="/tags/divide-and-conquer/" class="mini-tag">Divide and Conquer</a>
     <a href="/tags/array/" class="mini-tag">Array</a>
+    <a href="/tags/sorting/" class="mini-tag">Sorting</a>
 </div>
 
 <div style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">

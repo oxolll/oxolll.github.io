@@ -287,6 +287,7 @@ layout: "list"
     <a href="/tags/sorting/" class="mini-tag">Sorting</a>
     <a href="/tags/inclusion-exclusion/" class="mini-tag">Inclusion-Exclusion</a>
     <a href="/tags/number-theory/" class="mini-tag">Number Theory</a>
+    <a href="/tags/matrix/" class="mini-tag">Matrix</a>
 </div>
 
 <div style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">

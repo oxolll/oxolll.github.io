@@ -2,7 +2,7 @@
 title: "LeetCode 3863. Minimum Operations to Sort a String"
 date: 2026-03-09T13:10:00+08:00
 lastmod: 2026-03-09T13:10:00+08:00
-difficulty: 1800
+difficulty: 1859
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "String", "Sorting", "Greedy"]
-keywords: ["LC3863", "N/A", "Medium", "Sorting Substring", "Operations"]
-description: "LeetCode 第 3863 題：Minimum Operations to Sort a String。難度評分：N/A。探討如何藉由貪心策略，以最少的操作次數(排序非真子字串)讓整個字串變為非遞減序列。"
+keywords: ["LC3863", "1859", "Medium", "Sorting Substring", "Operations"]
+description: "LeetCode 第 3863 題：Minimum Operations to Sort a String。難度評分：1859。探討如何藉由貪心策略，以最少的操作次數(排序非真子字串)讓整個字串變為非遞減序列。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3863](https://leetcode.com/problems/minimum-operations-to-sort-a-string/)  
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(N/A)</span>   
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(1859)</span>   
 > **核心主題**：`String` $\cdot$ `Sorting` $\cdot$ `Greedy`
 
 ---

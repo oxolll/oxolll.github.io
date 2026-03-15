@@ -289,7 +289,9 @@ layout: "list"
     <a href="/tags/number-theory/" class="mini-tag">Number Theory</a>
     <a href="/tags/matrix/" class="mini-tag">Matrix</a>
     <a href="/tags/game-theory/" class="mini-tag">Game Theory</a>
-    <a href="/tags/Brainteaser/" class="mini-tag">Brainteaser</a>
+    <a href="/tags/brainteaser/" class="mini-tag">Brainteaser</a>
+    <a href="/tags/union-find/" class="mini-tag">Union Find</a>
+    <a href="/tags/backtracking/" class="mini-tag">Backtracking</a>
 </div>
 
 <div style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">

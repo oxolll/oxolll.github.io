@@ -2,7 +2,7 @@
 title: "LeetCode 3861. Minimum Capacity Box"
 date: 2026-03-09T13:00:00+08:00
 lastmod: 2026-03-09T13:00:00+08:00
-difficulty: 1200
+difficulty: 1154
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Array"]
-keywords: ["LC3861", "N/A", "Easy", "Minimum Capacity"]
-description: "LeetCode 第 3861 題：Minimum Capacity Box。難度評分：N/A。探討如何透過一次遍歷尋找滿足容量條件且容量最小的箱子索引。"
+keywords: ["LC3861", "1154", "Easy", "Minimum Capacity"]
+description: "LeetCode 第 3861 題：Minimum Capacity Box。難度評分：1154。探討如何透過一次遍歷尋找滿足容量條件且容量最小的箱子索引。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3861](https://leetcode.com/problems/minimum-capacity-box/)  
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy(N/A)</span>   
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy(1154)</span>   
 > **核心主題**：`Array`
 
 ---

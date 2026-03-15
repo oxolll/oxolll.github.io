@@ -2,7 +2,7 @@
 title: "LeetCode 3864. Minimum Cost to Partition a Binary String"
 date: 2026-03-09T13:15:00+08:00
 lastmod: 2026-03-09T13:15:00+08:00
-difficulty: 1900
+difficulty: 2032
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Dynamic Programming", "Divide and Conquer", "Prefix Sum"]
-keywords: ["LC3864", "N/A", "Hard", "Binary String", "Partition", "Tree Recursion"]
-description: "LeetCode 第 3864 題：Minimum Cost to Partition a Binary String。難度評分：N/A。探討如何利用前綴和優化與分治法(Divide and Conquer)找出最低成本的完美二元切割策略。"
+keywords: ["LC3864", "2032", "Hard", "Binary String", "Partition", "Tree Recursion"]
+description: "LeetCode 第 3864 題：Minimum Cost to Partition a Binary String。難度評分：2032。探討如何利用前綴和優化與分治法(Divide and Conquer)找出最低成本的完美二元切割策略。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3864](https://leetcode.com/problems/minimum-cost-to-partition-a-binary-string/)  
-> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard(N/A)</span>   
+> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard(2032)</span>   
 > **核心主題**：`Dynamic Programming` $\cdot$ `Divide and Conquer` $\cdot$ `String`
 
 ---

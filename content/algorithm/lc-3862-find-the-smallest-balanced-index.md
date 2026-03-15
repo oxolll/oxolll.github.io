@@ -2,7 +2,7 @@
 title: "LeetCode 3862. Find the Smallest Balanced Index"
 date: 2026-03-09T13:05:00+08:00
 lastmod: 2026-03-09T13:05:00+08:00
-difficulty: 1600
+difficulty: 1697
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Array", "Prefix Sum", "Math"]
-keywords: ["LC3862", "N/A", "Medium", "Balanced Index", "Prefix Sum", "Early Pruning"]
-description: "LeetCode 第 3862 題：Find the Smallest Balanced Index。難度評分：N/A。探討如何利用前綴和思想與防溢位剪枝，以 O(N) 時間找到左右和積相等的平衡索引。"
+keywords: ["LC3862", "1697", "Medium", "Balanced Index", "Prefix Sum", "Early Pruning"]
+description: "LeetCode 第 3862 題：Find the Smallest Balanced Index。難度評分：1697。探討如何利用前綴和思想與防溢位剪枝，以 O(N) 時間找到左右和積相等的平衡索引。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3862](https://leetcode.com/problems/find-the-smallest-balanced-index/)  
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(N/A)</span>   
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(1697)</span>   
 > **核心主題**：`Array` $\cdot$ `Prefix Sum` $\cdot$ `Math`
 
 ---

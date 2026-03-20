@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["Algorithm"]
-tags: ["LeetCode", "String", "Prefix Sum", "State Compression"]
+tags: ["LeetCode", "String", "Prefix Sum"]
 keywords: ["LC2483", "1494", "Medium", "Minimum Penalty", "Prefix Sum", "狀態壓縮"]
 description: "LeetCode 第 2483 題：Minimum Penalty for a Shop。難度評分：1494。探討如何利用十進位狀態壓縮技巧，將兩個前綴和合併至單一 64-bit 整數陣列中，以 O(N) 時間找出商店的最佳打烊時間。"
 ---

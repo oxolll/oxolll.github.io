@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["Algorithm"]
-tags: ["LeetCode", "Array", "Sorting", "Merge Intervals"]
+tags: ["LeetCode", "Array", "Sorting"]
 keywords: ["LC2848", "1229", "Easy", "Merge Intervals", "Sweep Line"]
 description: "LeetCode 第 2848 題：Points That Intersect With Cars。難度評分：1229。探討如何利用排序與區間合併 (Merge Intervals) 技巧，在 O(N log N) 時間內計算多個重疊線段所覆蓋的總整數點數量。"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "LeetCode 238. Product of Array Except Self"
 date: 2026-03-16T10:15:00+08:00
-lastmod: 2026-03-16T10:15:00+08:00
+lastmod: 2026-03-21T18:10:00+08:00
 difficulty: 1500
 draft: false
 hidden: false
@@ -18,7 +18,7 @@ description: "LeetCode 第 238 題：Product of Array Except Self。難度評分
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 238](https://leetcode.com/problems/product-of-array-except-self/)  
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
 > **核心主題**：`Array` $\cdot$ `Prefix Sum`
 
 ---
@@ -48,7 +48,60 @@ description: "LeetCode 第 238 題：Product of Array Except Self。難度評分
 ---
 
 ## 📝 歷次打卡與更新
+- [2026-03-21：新增標準前綴與後綴乘積陣列相乘法](#2026-03-21-標準前後綴乘積法)
 - [2026-03-16：初次提交 (跳躍式前綴後綴乘積與零計數法)](#2026-03-16-初次提交)
+
+---
+
+## 💡 2026-03-21 標準前後綴乘積法
+
+### 🎯 直覺 (Intuition)
+這是處理本題最核心、最不容易出錯的標準思維。「除了自己以外的乘積」可以完美拆解為兩個部分：
+1. 自己**左側**所有數字的乘積（前綴乘積）。
+2. 自己**右側**所有數字的乘積（後綴乘積）。
+如果我們預先算出這兩個陣列，那麼對於任何一個索引 `i`，答案就是 `left_p[i-1] * right_p[i+1]`。這種方法完全不需要特別去計算陣列裡有幾個 `0`，因為如果在 `i` 之外有 `0`，前後綴乘積自然會把 `0` 涵蓋進去並傳遞下去。
+
+### 🛠️ 解題思路 (Approach)
+1. **建立前後綴陣列**：
+   - 宣告 `left_p` 陣列，`left_p[i]` 記錄從 `nums[0]` 乘到 `nums[i]` 的累積乘積。
+   - 宣告 `right_p` 陣列，`right_p[n-1-i]` 記錄從 `nums[n-1]` 往回乘到 `nums[n-1-i]` 的累積乘積。
+   - 利用 `i > 0 ? left_p[i-1] : 1` 這類的三元運算子，漂亮地處理了陣列頭尾邊界的問題。
+2. **組合最終答案**：
+   - 宣告結果陣列 `rt`。
+   - 遍歷原陣列，`rt[i]` 的值即為左側乘積 (`left_p[i-1]`) 乘上右側乘積 (`right_p[i+1]`)。
+   - 同樣利用三元運算子確保當 `i=0` 或 `i=n-1` 時，缺少的那一側乘積以 `1` 替代，避免越界且不影響結果。
+
+### 📊 複雜度分析
+- **時間複雜度**: $\mathcal{O}(N)$。遍歷兩次陣列，常數極小。
+- **空間複雜度**: $\mathcal{O}(N)$。使用了 `left_p` 與 `right_p` 兩個輔助陣列。
+
+### 💻 程式碼實作 (C++)
+```cpp
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> left_p(n, 0);
+        vector<int> right_p(n, 0);
+        
+        // 1. 同時建立由左至右、由右至左的累積乘積陣列
+        for(int i = 0; i < n; ++i) {
+            // 左側前綴乘積
+            left_p[i] = (i > 0 ? left_p[i-1] : 1) * nums[i];
+            // 右側後綴乘積 (注意索引對應)
+            right_p[n-1-i] = (n-i < n ? right_p[n-i] : 1) * nums[n-1-i];
+        }
+
+        // 2. 組合答案：左邊所有數的乘積 * 右邊所有數的乘積
+        vector<int> rt(n, 0);
+        for(int i = 0; i < n; ++i) {
+            rt[i] = (i > 0 ? left_p[i-1] : 1) * (i + 1 < n ? right_p[i+1] : 1);
+        }
+        
+        return rt;
+    }
+};
+```
 
 ---
 
@@ -130,9 +183,9 @@ public:
 ### 💡 額外知識：$\mathcal{O}(1)$ 空間優化寫法
 LeetCode 這題有一個著名的 Follow-up：「你能否在 $\mathcal{O}(1)$ 的額外空間複雜度內解決此題？（回傳的答案陣列不計入空間複雜度）」。
 
-為了達到 $\mathcal{O}(1)$，我們可以**把答案陣列 `rt` 直接當作 `forward` 陣列來用**。
+為了達到 $\mathcal{O}(1)$，我們可以**把答案陣列 `rt` 直接當作左側前綴乘積陣列來用**。
 第一趟掃描時，`rt[i]` 先存好「它左邊所有元素的乘積」。
-第二趟掃描時，我們由右往左走，維護一個單一變數 `R` 代表「它右邊所有元素的累積乘積」，並直接乘進 `rt[i]` 裡面。這樣就完全不需要計算 0 的數量，也不需要額外開陣列了！
+第二趟掃描時，我們由右往左走，維護一個單一變數 `right_prod` 代表「它右邊所有元素的累積乘積」，並直接乘進 `rt[i]` 裡面。這樣就完全不需要計算 0 的數量，也不需要額外開陣列了！
 
 <details>
 <summary><b>點擊展開 O(1) 空間實作程式碼</b></summary>
@@ -163,7 +216,6 @@ public:
 };
 ```
 </details>
-
 
 <script>
     MathJax = {

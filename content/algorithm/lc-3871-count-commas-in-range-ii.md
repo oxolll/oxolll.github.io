@@ -2,7 +2,7 @@
 title: "LeetCode 3871. Count Commas in Range II"
 date: 2026-03-15T15:51:00+08:00
 lastmod: 2026-03-15T15:51:00+08:00
-difficulty: 1500
+difficulty: 1380
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Math"]
-keywords: ["LC3871", "N/A", "Medium", "Commas", "Math", "O(1)", "Cumulative Contribution"]
-description: "LeetCode 第 3871 題：Count Commas in Range II。難度評分：N/A。探討如何利用「貢獻度疊加」的數學思想，將巨量資料規模的字串逗號計算問題化簡為 O(1) 的極速公式解。"
+keywords: ["LC3871", "1380", "Medium", "Commas", "Math", "O(1)", "Cumulative Contribution"]
+description: "LeetCode 第 3871 題：Count Commas in Range II。難度評分：1380。探討如何利用「貢獻度疊加」的數學思想，將巨量資料規模的字串逗號計算問題化簡為 O(1) 的極速公式解。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3871](https://leetcode.com/problems/count-commas-in-range-ii/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(N/A)</span>    
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(1380)</span>    
 > **核心主題**：`Math`
 
 ---

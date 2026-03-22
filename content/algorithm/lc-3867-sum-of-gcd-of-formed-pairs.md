@@ -2,7 +2,7 @@
 title: "LeetCode 3867. Sum of GCD of Formed Pairs"
 date: 2026-03-15T14:58:00+08:00
 lastmod: 2026-03-15T14:58:00+08:00
-difficulty: 1500
+difficulty: 1406
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Math", "Number Theory", "Greedy", "Sorting"]
-keywords: ["LC3867", "N/A", "Medium", "GCD", "Euclidean Algorithm", "Greedy Pairing"]
-description: "LeetCode 第 3867 題：Sum of GCD of Formed Pairs。難度評分：1500。探討如何透過前綴最大值計算 GCD 陣列，並運用貪心策略配對，同時展示極致精簡的輾轉相除法實作。"
+keywords: ["LC3867", "1406", "Medium", "GCD", "Euclidean Algorithm", "Greedy Pairing"]
+description: "LeetCode 第 3867 題：Sum of GCD of Formed Pairs。難度評分：1406。探討如何透過前綴最大值計算 GCD 陣列，並運用貪心策略配對，同時展示極致精簡的輾轉相除法實作。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3867](https://leetcode.com/problems/sum-of-gcd-of-formed-pairs/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(N/A)</span>    
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(1406)</span>    
 > **核心主題**：`Math` $\cdot$ `Number Theory` $\cdot$ `Greedy` $\cdot$ `Sorting`
 
 ---

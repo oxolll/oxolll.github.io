@@ -2,7 +2,7 @@
 title: "LeetCode 3870. Count Commas in Range"
 date: 2026-03-15T15:50:00+08:00
 lastmod: 2026-03-15T15:50:00+08:00
-difficulty: 1200
+difficulty: 1149
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Math"]
-keywords: ["LC3870", "N/A", "Easy", "Commas", "Math", "O(1)"]
-description: "LeetCode 第 3870 題：Count Commas in Range。難度評分：N/A。探討如何利用數字範圍特性與數學公式，將字串運算降維成 O(1) 的極速解法。"
+keywords: ["LC3870", "1149", "Easy", "Commas", "Math", "O(1)"]
+description: "LeetCode 第 3870 題：Count Commas in Range。難度評分：1149。探討如何利用數字範圍特性與數學公式，將字串運算降維成 O(1) 的極速解法。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3870](https://leetcode.com/problems/count-commas-in-range/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy(N/A)</span>   
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy(1149)</span>   
 > **核心主題**：`Math`
 
 ---

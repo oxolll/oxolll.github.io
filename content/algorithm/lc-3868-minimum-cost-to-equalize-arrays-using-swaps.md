@@ -2,7 +2,7 @@
 title: "LeetCode 3868. Minimum Cost to Equalize Arrays Using Swaps"
 date: 2026-03-15T15:13:00+08:00
 lastmod: 2026-03-15T15:13:00+08:00
-difficulty: 1800
+difficulty: 1578
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Hash Table", "Greedy", "Math"]
-keywords: ["LC3868", "N/A", "Medium", "Equalize Arrays", "Minimum Swaps"]
-description: "LeetCode 第 3868 題：Minimum Cost to Equalize Arrays Using Swaps。難度評分：1800。探討如何利用 Hash Table 統計頻率差異，並透過嚴謹的貪心策略證明求得最少交換次數。"
+keywords: ["LC3868", "1578", "Medium", "Equalize Arrays", "Minimum Swaps"]
+description: "LeetCode 第 3868 題：Minimum Cost to Equalize Arrays Using Swaps。難度評分：1578。探討如何利用 Hash Table 統計頻率差異，並透過嚴謹的貪心策略證明求得最少交換次數。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3868](https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(N/A)</span>    
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium(1578)</span>    
 > **核心主題**：`Hash Table` $\cdot$ `Greedy` $\cdot$ `Math`
 
 ---

@@ -2,7 +2,7 @@
 title: "LeetCode 3866. First Unique Even Element"
 date: 2026-03-15T14:35:00+08:00
 lastmod: 2026-03-15T14:35:00+08:00
-difficulty: 1200
+difficulty: 1209
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,12 +12,12 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Array", "Hash Table", "Counting"]
-keywords: ["LC3866", "N/A", "Easy", "Unique Element", "Frequency Array"]
-description: "LeetCode 第 3866 題：First Unique Even Element。難度評分：1200。探討如何利用數值範圍限制，以固定大小的陣列取代 Hash Map 來進行 O(N) 的高效頻率計數。"
+keywords: ["LC3866", "1209", "Easy", "Unique Element", "Frequency Array"]
+description: "LeetCode 第 3866 題：First Unique Even Element。難度評分：1209。探討如何利用數值範圍限制，以固定大小的陣列取代 Hash Map 來進行 O(N) 的高效頻率計數。"
 ---
 
 ## 📊 題目資訊
-> **題目連結**：[LeetCode 3866](https://leetcode.com/problems/first-unique-even-element/) *(註：題號對應依據實際 LeetCode 題庫)* > **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy(N/A)</span>    
+> **題目連結**：[LeetCode 3866](https://leetcode.com/problems/first-unique-even-element/) *(註：題號對應依據實際 LeetCode 題庫)* > **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy(1209)</span>    
 > **核心主題**：`Array` $\cdot$ `Hash Table` $\cdot$ `Counting`
 
 ---

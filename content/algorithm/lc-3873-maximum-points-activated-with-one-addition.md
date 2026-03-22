@@ -2,7 +2,7 @@
 title: "LeetCode 3873. Maximum Points Activated with One Addition"
 date: 2026-03-15T16:08:00+08:00
 lastmod: 2026-03-15T16:08:00+08:00
-difficulty: 2200
+difficulty: 2198
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Graph", "Union Find", "Greedy"]
-keywords: ["LC3873", "N/A", "Hard", "DSU", "Connected Components", "Maximum Activated"]
-description: "LeetCode 第 3873 題：Maximum Points Activated with One Addition。難度評分：N/A。探討如何利用併查集 (DSU) 找出共享座標的連通塊，並透過貪心策略計算新增一個點所能啟動的最大點數。"
+keywords: ["LC3873", "2198", "Hard", "DSU", "Connected Components", "Maximum Activated"]
+description: "LeetCode 第 3873 題：Maximum Points Activated with One Addition。難度評分：2198。探討如何利用併查集 (DSU) 找出共享座標的連通塊，並透過貪心策略計算新增一個點所能啟動的最大點數。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3873](https://leetcode.com/problems/maximum-points-activated-with-one-addition/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard(N/A)</span>   
+> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard(2198)</span>   
 > **核心主題**：`Graph` $\cdot$ `Union Find (DSU)` $\cdot$ `Greedy`
 
 ---

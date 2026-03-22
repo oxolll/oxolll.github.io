@@ -1,5 +1,5 @@
 ---
-title: "🧩 LeetCode 3212. Count Submatrices With Equal Frequency of X and Y"
+title: "LeetCode 3212. Count Submatrices With Equal Frequency of X and Y"
 date: 2026-03-20T04:21:00+08:00
 lastmod: 2026-03-20T04:21:00+08:00
 difficulty: 1672

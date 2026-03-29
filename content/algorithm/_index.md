@@ -292,6 +292,7 @@ layout: "list"
     <a href="/tags/brainteaser/" class="mini-tag">Brainteaser</a>
     <a href="/tags/union-find/" class="mini-tag">Union Find</a>
     <a href="/tags/backtracking/" class="mini-tag">Backtracking</a>
+    <a href="/tags/trie/" class="mini-tag">Trie</a>
 </div>
 
 <div style="text-align: center; color: #666; font-size: 13px; margin-bottom: 20px;">

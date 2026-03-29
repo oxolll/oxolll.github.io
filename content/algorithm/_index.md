@@ -268,6 +268,8 @@ layout: "list"
     <!-- b -->
         <a href="/tags/backtracking/" class="mini-tag">Backtracking</a>
         <a href="/tags/binary-search/" class="mini-tag">Binary Search</a>
+        <a href="/tags/binary-search-tree/" class="mini-tag">Binary Search Tree</a>
+        <a href="/tags/binary-tree/" class="mini-tag">Binary Tree</a>
         <a href="/tags/bit-manipulation/" class="mini-tag">Bit Manipulation</a>
         <a href="/tags/brainteaser/" class="mini-tag">Brainteaser</a>
         <a href="/tags/breadth-first-search/" class="mini-tag">Breadth-First-Search</a>
@@ -277,6 +279,7 @@ layout: "list"
         <a href="/tags/constructive/" class="mini-tag">Constructive</a>
         <a href="/tags/counting/" class="mini-tag">Counting</a>
     <!-- d -->
+        <a href="/tags/depth-first-search/" class="mini-tag">Depth-First-Search</a>
         <a href="/tags/design/" class="mini-tag">Design</a>
         <a href="/tags/divide-and-conquer/" class="mini-tag">Divide and Conquer</a>
         <a href="/tags/dynamic-programming/" class="mini-tag">Dynamic Programming</a>
@@ -286,6 +289,7 @@ layout: "list"
         <a href="/tags/binary-indexed-tree-fenwick-tree/" class="mini-tag">Binary Indexed Tree (Fenwick Tree)</a>
     <!-- g -->
         <a href="/tags/game-theory/" class="mini-tag">Game Theory</a>
+        <a href="/tags/geometry/" class="mini-tag">Geometry</a>
         <a href="/tags/graph/" class="mini-tag">Graph</a>
         <a href="/tags/greedy/" class="mini-tag">Greedy</a>
     <!-- h -->
@@ -293,29 +297,43 @@ layout: "list"
         <a href="/tags/heap/" class="mini-tag">Heap</a>
     <!-- i -->
         <a href="/tags/inclusion-exclusion/" class="mini-tag">Inclusion-Exclusion</a>
+        <a href="/tags/interactive/" class="mini-tag">Interactive</a>
     <!-- j -->
     <!-- k -->
     <!-- l -->
+        <a href="/tags/line-sweep/" class="mini-tag">Line Sweep</a>
+        <a href="/tags/linked-list/" class="mini-tag">Linked List</a>
     <!-- m -->
         <a href="/tags/math/" class="mini-tag">Math</a>
         <a href="/tags/matrix/" class="mini-tag">Matrix</a>
+        <a href="/tags/memoization/" class="mini-tag">Memoization</a>
+        <a href="/tags/monotonic-queue/" class="mini-tag">Monotonic Queue</a>
         <a href="/tags/monotonic-stack/" class="mini-tag">Monotonic Stack</a>
     <!-- n -->
         <a href="/tags/number-theory/" class="mini-tag">Number Theory</a>
     <!-- o -->
     <!-- p -->
         <a href="/tags/prefix-sum/" class="mini-tag">Prefix Sum</a>
+        <a href="/tags/probability-and-statistics/" class="mini-tag">Probability and Statistics</a>
     <!-- q -->
+        <a href="/tags/queue/" class="mini-tag">Queue</a>
     <!-- r -->
+        <a href="/tags/randomized/" class="mini-tag">Randomized</a>
+        <a href="/tags/recursion/" class="mini-tag">Recursion</a>
     <!-- s -->
         <a href="/tags/segment-tree/" class="mini-tag">Segment Tree</a>
+        <a href="/tags/shortest-path/" class="mini-tag">Shortest Path</a>
         <a href="/tags/simulation/" class="mini-tag">Simulation</a>
         <a href="/tags/sliding-window/" class="mini-tag">Sliding Window</a>
         <a href="/tags/sorting/" class="mini-tag">Sorting</a>
+        <a href="/tags/stack/" class="mini-tag">Stack</a>
         <a href="/tags/string/" class="mini-tag">String</a>
+        <a href="/tags/string-matching/" class="mini-tag">String Matching</a>
     <!-- t -->
-        <a href="/tags/two-pointers/" class="mini-tag">Two Pointers</a>
+        <a href="/tags/topological-sort/" class="mini-tag">Topological Sort</a>
+        <a href="/tags/tree/" class="mini-tag">Tree</a>
         <a href="/tags/trie/" class="mini-tag">Trie</a>
+        <a href="/tags/two-pointers/" class="mini-tag">Two Pointers</a>
     <!-- u -->
         <a href="/tags/union-find/" class="mini-tag">Union Find</a>
     <!-- v -->

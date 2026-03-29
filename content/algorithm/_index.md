@@ -270,8 +270,10 @@ layout: "list"
         <a href="/tags/binary-search/" class="mini-tag">Binary Search</a>
         <a href="/tags/bit-manipulation/" class="mini-tag">Bit Manipulation</a>
         <a href="/tags/brainteaser/" class="mini-tag">Brainteaser</a>
+        <a href="/tags/breadth-first-search/" class="mini-tag">Breadth-First-Search</a>
     <!-- c -->
         <a href="/tags/case-analysis/" class="mini-tag">Case Analysis</a>
+        <a href="/tags/combinatorics/" class="mini-tag">Combinatorics</a>
         <a href="/tags/constructive/" class="mini-tag">Constructive</a>
         <a href="/tags/counting/" class="mini-tag">Counting</a>
     <!-- d -->
@@ -288,6 +290,7 @@ layout: "list"
         <a href="/tags/greedy/" class="mini-tag">Greedy</a>
     <!-- h -->
         <a href="/tags/hash-table/" class="mini-tag">Hash Table</a>
+        <a href="/tags/heap/" class="mini-tag">Heap</a>
     <!-- i -->
         <a href="/tags/inclusion-exclusion/" class="mini-tag">Inclusion-Exclusion</a>
     <!-- j -->
@@ -296,6 +299,7 @@ layout: "list"
     <!-- m -->
         <a href="/tags/math/" class="mini-tag">Math</a>
         <a href="/tags/matrix/" class="mini-tag">Matrix</a>
+        <a href="/tags/monotonic-stack/" class="mini-tag">Monotonic Stack</a>
     <!-- n -->
         <a href="/tags/number-theory/" class="mini-tag">Number Theory</a>
     <!-- o -->
@@ -306,6 +310,7 @@ layout: "list"
     <!-- s -->
         <a href="/tags/segment-tree/" class="mini-tag">Segment Tree</a>
         <a href="/tags/simulation/" class="mini-tag">Simulation</a>
+        <a href="/tags/sliding-window/" class="mini-tag">Sliding Window</a>
         <a href="/tags/sorting/" class="mini-tag">Sorting</a>
         <a href="/tags/string/" class="mini-tag">String</a>
     <!-- t -->

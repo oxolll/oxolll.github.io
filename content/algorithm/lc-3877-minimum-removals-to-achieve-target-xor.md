@@ -2,7 +2,7 @@
 title: "LeetCode 3877. Minimum Removals to Achieve Target XOR"
 date: 2026-03-22T16:10:00+08:00
 lastmod: 2026-03-22T16:10:00+08:00
-difficulty: 1800
+difficulty: 1745
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "dynamic programming", "bit manipulation", "hash table"]
-keywords: ["LC3877", "Medium", "N/A", "Minimum Removals", "Target XOR", "0/1 Knapsack"]
-description: "LeetCode 第 3877 題：Minimum Removals to Achieve Target XOR。難度評分：Medium (N/A)。探討如何將移除元素的最小化問題，轉換為保留元素的最大化問題，並利用 0/1 動態規劃與 Hash Map 維護 XOR 狀態轉移。"
+keywords: ["LC3877", "Medium", "1745", "Minimum Removals", "Target XOR", "0/1 Knapsack"]
+description: "LeetCode 第 3877 題：Minimum Removals to Achieve Target XOR。難度評分：Medium (1745)。探討如何將移除元素的最小化問題，轉換為保留元素的最大化問題，並利用 0/1 動態規劃與 Hash Map 維護 XOR 狀態轉移。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3877](https://leetcode.com/problems/minimum-removals-to-achieve-target-xor/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1745)</span>  
 > **核心主題**：`Array` $\cdot$ `Dynamic Programming` $\cdot$ `Bit Manipulation` $\cdot$ `Hash Table`
 
 ---

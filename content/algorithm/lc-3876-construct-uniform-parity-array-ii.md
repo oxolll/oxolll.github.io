@@ -2,7 +2,7 @@
 title: "LeetCode 3876. Construct Uniform Parity Array II"
 date: 2026-03-22T16:05:00+08:00
 lastmod: 2026-03-22T16:05:00+08:00
-difficulty: 1500
+difficulty: 1443
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "math", "sorting"]
-keywords: ["LC3876", "Medium", "N/A", "Uniform Parity", "Sorting"]
-description: "LeetCode 第 3876 題：Construct Uniform Parity Array II。難度評分：Medium (N/A)。探討如何利用排序尋找極值，並透過最小值之奇偶性判定整個陣列是否具備達成一致奇偶性的充分條件。"
+keywords: ["LC3876", "Medium", "1443", "Uniform Parity", "Sorting"]
+description: "LeetCode 第 3876 題：Construct Uniform Parity Array II。難度評分：Medium (1443)。探討如何利用排序尋找極值，並透過最小值之奇偶性判定整個陣列是否具備達成一致奇偶性的充分條件。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3876](https://leetcode.com/problems/construct-uniform-parity-array-ii/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1443)</span>  
 > **核心主題**：`Array` $\cdot$ `Math` $\cdot$ `Sorting`   
 > **基礎版本**：🔗 [👉 點此查看本題的基礎版本：3875. Construct Uniform Parity Array I](../lc-3875-construct-uniform-parity-array-i/)
 

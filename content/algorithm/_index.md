@@ -278,9 +278,11 @@ layout: "list"
         <a href="/tags/combinatorics/" class="mini-tag">Combinatorics</a>
         <a href="/tags/constructive/" class="mini-tag">Constructive</a>
         <a href="/tags/counting/" class="mini-tag">Counting</a>
+        <a href="/tags/counting-sort/" class="mini-tag">Counting Sort</a>
     <!-- d -->
         <a href="/tags/depth-first-search/" class="mini-tag">Depth-First-Search</a>
         <a href="/tags/design/" class="mini-tag">Design</a>
+        <a href="/tags/difference-array/" class="mini-tag">Difference Array</a>
         <a href="/tags/divide-and-conquer/" class="mini-tag">Divide and Conquer</a>
         <a href="/tags/dynamic-programming/" class="mini-tag">Dynamic Programming</a>
     <!-- e -->
@@ -326,6 +328,7 @@ layout: "list"
         <a href="/tags/simulation/" class="mini-tag">Simulation</a>
         <a href="/tags/sliding-window/" class="mini-tag">Sliding Window</a>
         <a href="/tags/sorting/" class="mini-tag">Sorting</a>
+        <a href="/tags/square-root-decomposition/" class="mini-tag">Square Root Decomposition</a>
         <a href="/tags/stack/" class="mini-tag">Stack</a>
         <a href="/tags/string/" class="mini-tag">String</a>
         <a href="/tags/string-matching/" class="mini-tag">String Matching</a>

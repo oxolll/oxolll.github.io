@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["algorithm"]
-tags: ["leetcode", "array", "math", "square-root-decomposition", "difference-array"]
+tags: ["leetcode", "array", "math", "square root decomposition", "difference array"]
 keywords: ["LC3655", "2453", "Hard", "XOR After Range", "Square Root Decomposition", "Modular Inverse"]
 description: "LeetCode 第 3655 題：XOR After Range Multiplication Queries II。難度評分：2453。探討如何利用根號分治 (Square Root Decomposition) 策略，結合費馬小定理求模逆元與乘法差分陣列，在 O(Q sqrt N) 時間複雜度內解決帶有步長的大範圍區間乘法更新問題。"
 ---

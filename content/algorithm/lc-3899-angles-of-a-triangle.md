@@ -2,7 +2,7 @@
 title: "LeetCode 3899. Angles of a Triangle"
 date: 2026-04-12T14:30:00+08:00
 lastmod: 2026-04-12T14:30:00+08:00
-difficulty: 15000
+difficulty: 1500
 draft: false
 hidden: false
 # --- 目錄設定 ---

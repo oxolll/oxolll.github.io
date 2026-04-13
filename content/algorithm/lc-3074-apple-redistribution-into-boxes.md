@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["algorithm"]
-tags: ["leetcode", "array", "greedy", "sorting", "counting-sort"]
+tags: ["leetcode", "array", "greedy", "sorting", "counting sort"]
 keywords: ["LC3074", "1197", "Easy", "Apple Redistribution", "Greedy", "Counting Sort"]
 description: "LeetCode 第 3074 題：Apple Redistribution into Boxes。難度評分：1197。探討如何利用箱子容量上限的特性，使用計數排序 (Counting Sort) 取代傳統排序，並透過貪婪策略以 O(N + M) 時間複雜度求得所需的最少箱子數量。"
 ---

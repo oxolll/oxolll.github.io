@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["algorithm"]
-tags: ["leetcode", "array", "greedy", "sorting", "counting-sort"]
+tags: ["leetcode", "array", "greedy", "sorting", "counting sort"]
 keywords: ["LC1833", "1252", "Medium", "Maximum Ice Cream Bars", "Greedy", "Counting Sort"]
 description: "LeetCode 第 1833 題：Maximum Ice Cream Bars。難度評分：1252。探討如何利用冰棒價格上限的值域特性，以計數排序 (Counting Sort) 取代傳統排序，結合貪婪策略 (Greedy) 達成 O(N + M) 的最佳時間複雜度。"
 ---

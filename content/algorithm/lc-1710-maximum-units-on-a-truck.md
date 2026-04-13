@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["algorithm"]
-tags: ["leetcode", "array", "greedy", "sorting", "counting-sort"]
+tags: ["leetcode", "array", "greedy", "sorting", "counting sort"]
 keywords: ["LC1710", "1309", "Easy", "Maximum Units", "Truck", "Greedy", "Counting Sort"]
 description: "LeetCode 第 1710 題：Maximum Units on a Truck。難度評分：1309。探討如何利用單位數量的值域上限限制，將傳統的 O(N log N) 排序優化為 O(N) 的計數排序，並結合貪婪策略快速求得卡車可裝載的最大單位總數。"
 ---

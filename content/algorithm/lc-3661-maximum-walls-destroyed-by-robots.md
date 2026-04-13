@@ -11,7 +11,7 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["algorithm"]
-tags: ["leetcode", "array", "dynamic-programming", "binary-search", "sorting"]
+tags: ["leetcode", "array", "dynamic programming", "binary search", "sorting"]
 keywords: ["LC3661", "2525", "Hard", "Maximum Walls", "Robots", "Dynamic Programming", "Interval Overlap"]
 description: "LeetCode 第 3661 題：Maximum Walls Destroyed by Robots。難度評分：2525。探討如何結合排序、二分搜尋 (lower_bound) 預處理區間牆壁數量，並透過狀態機動態規劃精準處理機器人破壞範圍的重疊，以 O(M log N + M log M) 時間複雜度求得最大破壞牆壁數。"
 ---

@@ -2,7 +2,7 @@
 title: "LeetCode 3880. Minimum Absolute Difference Between Two Values"
 date: 2026-03-29T01:38:00+08:00
 lastmod: 2026-03-29T01:38:00+08:00
-difficulty: 1200
+difficulty: 1257
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "two pointers", "greedy"]
-keywords: ["LC3880", "Easy", "N/A", "Minimum Absolute Difference", "Linear Scan"]
-description: "LeetCode 第 3880 題：Minimum Absolute Difference Between Two Values。難度評分：Easy (N/A)。探討如何透過單次線性掃描並動態維護目標值的最新索引，以 O(N) 時間複雜度與 O(1) 空間複雜度求得最小索引距離。"
+keywords: ["LC3880", "Easy", "1257", "Minimum Absolute Difference", "Linear Scan"]
+description: "LeetCode 第 3880 題：Minimum Absolute Difference Between Two Values。難度評分：Easy (1257)。探討如何透過單次線性掃描並動態維護目標值的最新索引，以 O(N) 時間複雜度與 O(1) 空間複雜度求得最小索引距離。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3880](https://leetcode.com/problems/minimum-absolute-difference-between-two-values/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1257)</span>  
 > **核心主題**：`Array` $\cdot$ `Two Pointers` $\cdot$ `Greedy`
 
 ---

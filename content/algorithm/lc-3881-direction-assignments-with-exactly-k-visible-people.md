@@ -2,7 +2,7 @@
 title: "LeetCode 3881. Direction Assignments with Exactly K Visible People"
 date: 2026-03-29T01:40:00+08:00
 lastmod: 2026-03-29T01:40:00+08:00
-difficulty: 1500
+difficulty: 1760
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "math", "combinatorics", "number theory"]
-keywords: ["LC3881", "Medium", "N/A", "Combinatorics", "Fermat's Little Theorem", "Modular Inverse"]
-description: "LeetCode 第 3881 題：Direction Assignments with Exactly K Visible People。難度評分：Medium (N/A)。探討如何運用費馬小定理求模反元素，並結合快速冪與組合數公式，以 O(K + log(MOD)) 時間複雜度高效計算排列組合數量。"
+keywords: ["LC3881", "Medium", "1760", "Combinatorics", "Fermat's Little Theorem", "Modular Inverse"]
+description: "LeetCode 第 3881 題：Direction Assignments with Exactly K Visible People。難度評分：Medium (1760)。探討如何運用費馬小定理求模反元素，並結合快速冪與組合數公式，以 O(K + log(MOD)) 時間複雜度高效計算排列組合數量。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3881](https://leetcode.com/problems/direction-assignments-with-exactly-k-visible-people/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1760)</span>  
 > **核心主題**：`Math` $\cdot$ `Combinatorics` $\cdot$ `Number Theory`
 
 ---

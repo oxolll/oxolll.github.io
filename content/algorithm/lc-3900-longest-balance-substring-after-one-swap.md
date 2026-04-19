@@ -2,7 +2,7 @@
 title: "LeetCode 3900. Longest Balanced Substring After One Swap"
 date: 2026-04-13T10:00:00+08:00
 lastmod: 2026-04-13T10:00:00+08:00
-difficulty: 1800
+difficulty: 2134
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "string", "hash-table", "prefix-sum", "math"]
-keywords: ["LC3900", "Medium", "N/A", "Longest Balanced Substring", "Prefix Sum", "Hash Map"]
-description: "LeetCode 第 3900 題：Longest Balanced Substring After One Swap。難度評分：Medium (N/A)。探討如何利用前綴和 (Prefix Sum) 搭配 Hash Map，透過數學推導找出差值為 2 或 -2 的潛在區間，並利用雙重索引紀錄 (First & Second) 完美處理外部替換字元的邊界條件，以 O(N) 時間複雜度求得一次交換後的最長平衡子字串。"
+keywords: ["LC3900", "Medium", "2134", "Longest Balanced Substring", "Prefix Sum", "Hash Map"]
+description: "LeetCode 第 3900 題：Longest Balanced Substring After One Swap。難度評分：Medium (2134)。探討如何利用前綴和 (Prefix Sum) 搭配 Hash Map，透過數學推導找出差值為 2 或 -2 的潛在區間，並利用雙重索引紀錄 (First & Second) 完美處理外部替換字元的邊界條件，以 O(N) 時間複雜度求得一次交換後的最長平衡子字串。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3900](https://leetcode.com/problems/longest-balanced-substring-after-one-swap/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (2134)</span>  
 > **核心主題**：`String` $\cdot$ `Hash Table` $\cdot$ `Prefix Sum` $\cdot$ `Math`
 
 ---

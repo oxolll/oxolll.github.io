@@ -2,7 +2,7 @@
 title: "LeetCode 3882. Minimum XOR Path in a Grid"
 date: 2026-03-29T01:18:00+08:00
 lastmod: 2026-03-29T01:18:00+08:00
-difficulty: 1800
+difficulty: 1770
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "matrix", "breadth-first search", "bit manipulation", "dynamic programming"]
-keywords: ["LC3882", "Medium", "N/A", "Minimum XOR Path", "BFS", "State Caching"]
-description: "LeetCode 第 3882 題：Minimum XOR Path in a Grid。難度評分：Medium (N/A)。探討如何透過 BFS 結合三維狀態記憶陣列 (State Caching)，以 O(M * N * V) 時間複雜度高效解決網格中的最小 XOR 路徑問題。"
+keywords: ["LC3882", "Medium", "1770", "Minimum XOR Path", "BFS", "State Caching"]
+description: "LeetCode 第 3882 題：Minimum XOR Path in a Grid。難度評分：Medium (1770)。探討如何透過 BFS 結合三維狀態記憶陣列 (State Caching)，以 O(M * N * V) 時間複雜度高效解決網格中的最小 XOR 路徑問題。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3882](https://leetcode.com/problems/minimum-xor-path-in-a-grid/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1770)</span>  
 > **核心主題**：`Matrix` $\cdot$ `Breadth-First Search` $\cdot$ `Bit Manipulation`
 
 ---

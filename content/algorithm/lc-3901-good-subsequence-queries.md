@@ -2,7 +2,7 @@
 title: "LeetCode 3901. Good Subsequence Queries"
 date: 2026-04-13T20:45:00+08:00
 lastmod: 2026-04-13T20:45:00+08:00
-difficulty: 2500
+difficulty: 2544
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "math", "square root decomposition", "segment tree", "number theory"]
 keywords: ["LC3901", "Hard", "Good Subsequence Queries", "Square Root Decomposition", "Segment Tree", "GCD"]
-description: "LeetCode 第 3901 題：Good Subsequence Queries。難度評分：Hard (N/A)。探討如何解決單點更新與全域 GCD 查詢問題。完整收錄兩種高階資料結構解法：利用分塊法 (Square Root Decomposition) 達成 O(Q sqrt N) 的常數優化，以及利用線段樹 (Segment Tree) 達成 O(Q log N) 的理論極限，並結合嚴謹的數論剪枝完成最優解。"
+description: "LeetCode 第 3901 題：Good Subsequence Queries。難度評分：Hard (2544)。探討如何解決單點更新與全域 GCD 查詢問題。完整收錄兩種高階資料結構解法：利用分塊法 (Square Root Decomposition) 達成 O(Q sqrt N) 的常數優化，以及利用線段樹 (Segment Tree) 達成 O(Q log N) 的理論極限，並結合嚴謹的數論剪枝完成最優解。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3901](https://leetcode.com/problems/good-subsequence-queries/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (N/A)</span>  
+> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (2544)</span>  
 > **核心主題**：`Array` $\cdot$ `Math` $\cdot$ `Square Root Decomposition` $\cdot$ `Segment Tree` $\cdot$ `Number Theory`
 
 ---

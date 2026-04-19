@@ -2,7 +2,7 @@
 title: "LeetCode 3884. First Matching Character From Both Ends"
 date: 2026-03-29T13:10:00+08:00
 lastmod: 2026-03-29T13:10:00+08:00
-difficulty: 1200
+difficulty: 1161
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "string", "two pointers"]
-keywords: ["LC3884", "Easy", "N/A", "Matching Character", "Two Pointers"]
-description: "LeetCode 第 3884 題：First Matching Character From Both Ends。難度評分：Easy (N/A)。探討如何透過首尾雙指標向內聚攏，以 O(N) 時間複雜度與 O(1) 空間快速尋找第一組對稱相等的字元。"
+keywords: ["LC3884", "Easy", "1161", "Matching Character", "Two Pointers"]
+description: "LeetCode 第 3884 題：First Matching Character From Both Ends。難度評分：Easy (1161)。探討如何透過首尾雙指標向內聚攏，以 O(N) 時間複雜度與 O(1) 空間快速尋找第一組對稱相等的字元。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3884](https://leetcode.com/problems/first-matching-character-from-both-ends/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1161)</span>  
 > **核心主題**：`String` $\cdot$ `Two Pointers`
 
 ---

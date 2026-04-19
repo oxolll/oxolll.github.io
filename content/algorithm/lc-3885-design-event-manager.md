@@ -2,7 +2,7 @@
 title: "LeetCode 3885. Design Event Manager"
 date: 2026-03-29T13:12:00+08:00
 lastmod: 2026-03-29T13:12:00+08:00
-difficulty: 1500
+difficulty: 1548
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "design", "heap", "hash table"]
-keywords: ["LC3885", "Medium", "N/A", "Event Manager", "Priority Queue", "Lazy Deletion"]
-description: "LeetCode 第 3885 題：Design Event Manager。難度評分：Medium (N/A)。探討如何利用優先佇列 (Priority Queue) 搭配 Hash Map 實作延遲刪除 (Lazy Deletion)，並利用數學狀態壓縮自動處理優先度相同時的 ID 排序規則。"
+keywords: ["LC3885", "Medium", "1548", "Event Manager", "Priority Queue", "Lazy Deletion"]
+description: "LeetCode 第 3885 題：Design Event Manager。難度評分：Medium (1548)。探討如何利用優先佇列 (Priority Queue) 搭配 Hash Map 實作延遲刪除 (Lazy Deletion)，並利用數學狀態壓縮自動處理優先度相同時的 ID 排序規則。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3885](https://leetcode.com/problems/design-event-manager/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1548)</span>  
 > **核心主題**：`Design` $\cdot$ `Heap (Priority Queue)` $\cdot$ `Hash Table`
 
 ---

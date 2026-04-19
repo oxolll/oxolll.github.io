@@ -2,7 +2,7 @@
 title: "LeetCode 3898. Find the Degree of Each Vertex"
 date: 2026-04-13T14:00:00+08:00
 lastmod: 2026-04-13T14:00:00+08:00
-difficulty: 1200
+difficulty: 1202
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "graph", "matrix", "array"]
-keywords: ["LC3898", "Easy", "N/A", "Degree of Each Vertex", "Adjacency Matrix"]
-description: "LeetCode 第 3898 題：Find the Degree of Each Vertex。難度評分：Easy (N/A)。探討如何利用無向圖鄰接矩陣的對稱性，僅走訪矩陣右上半部以 O(N^2) 的最佳時間複雜度精準計算每個頂點的度數。"
+keywords: ["LC3898", "Easy", "1202", "Degree of Each Vertex", "Adjacency Matrix"]
+description: "LeetCode 第 3898 題：Find the Degree of Each Vertex。難度評分：Easy (1202)。探討如何利用無向圖鄰接矩陣的對稱性，僅走訪矩陣右上半部以 O(N^2) 的最佳時間複雜度精準計算每個頂點的度數。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3898](https://leetcode.com/problems/find-the-degree-of-each-vertex/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1202)</span>  
 > **核心主題**：`Graph` $\cdot$ `Matrix` $\cdot$ `Array`
 
 ---

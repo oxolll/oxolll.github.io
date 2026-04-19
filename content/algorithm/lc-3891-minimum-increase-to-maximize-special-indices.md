@@ -2,7 +2,7 @@
 title: "LeetCode 3891. Minimum Increase to Maximize Special Indices"
 date: 2026-04-08T10:00:00+08:00
 lastmod: 2026-04-08T10:00:00+08:00
-difficulty: 1500
+difficulty: 1952
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "dynamic-programming", "greedy"]
-keywords: ["LC3891", "Medium", "N/A", "Special Indices", "Dynamic Programming", "Peak Elements"]
-description: "LeetCode 第 3891 題：Minimum Increase to Maximize Special Indices。難度評分：Medium (N/A)。探討如何依據陣列長度的奇偶性，利用貪婪策略與一維狀態機動態規劃 (1D DP)，以 O(N) 時間複雜度求得構造最多峰值所需的最少增加總量。"
+keywords: ["LC3891", "Medium", "1952", "Special Indices", "Dynamic Programming", "Peak Elements"]
+description: "LeetCode 第 3891 題：Minimum Increase to Maximize Special Indices。難度評分：Medium (1952)。探討如何依據陣列長度的奇偶性，利用貪婪策略與一維狀態機動態規劃 (1D DP)，以 O(N) 時間複雜度求得構造最多峰值所需的最少增加總量。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3891](https://leetcode.com/problems/minimum-increase-to-maximize-special-indices/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1952)</span>  
 > **核心主題**：`Array` $\cdot$ `Dynamic Programming` $\cdot$ `Greedy`
 
 ---

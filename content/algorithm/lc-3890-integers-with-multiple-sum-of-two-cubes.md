@@ -2,7 +2,7 @@
 title: "LeetCode 3890. Integers With Multiple Sum of Two Cubes"
 date: 2026-04-09T10:00:00+08:00
 lastmod: 2026-04-09T10:00:00+08:00
-difficulty: 1500
+difficulty: 1534
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "math", "hash-table", "enumeration", "sorting"]
-keywords: ["LC3890", "Medium", "N/A", "Sum of Two Cubes", "Taxicab Number", "Ramanujan", "Hash Table"]
-description: "LeetCode 第 3890 題：Integers With Multiple Sum of Two Cubes。難度評分：Medium (N/A)。探討如何利用數學上界分析 (x <= 1000) 配合雙層迴圈枚舉與雜湊表計數，快速找出所有能以多種方式表示為兩立方數之和的計程車數 (Taxicab numbers)。"
+keywords: ["LC3890", "Medium", "1534", "Sum of Two Cubes", "Taxicab Number", "Ramanujan", "Hash Table"]
+description: "LeetCode 第 3890 題：Integers With Multiple Sum of Two Cubes。難度評分：Medium (1534)。探討如何利用數學上界分析 (x <= 1000) 配合雙層迴圈枚舉與雜湊表計數，快速找出所有能以多種方式表示為兩立方數之和的計程車數 (Taxicab numbers)。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3890](https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1534)</span>  
 > **核心主題**：`Math` $\cdot$ `Hash Table` $\cdot$ `Enumeration` $\cdot$ `Sorting`
 
 ---

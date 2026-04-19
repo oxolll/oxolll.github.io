@@ -2,7 +2,7 @@
 title: "LeetCode 3889. Mirror Frequency Distance"
 date: 2026-04-09T14:00:00+08:00
 lastmod: 2026-04-09T14:00:00+08:00
-difficulty: 1500
+difficulty: 1312
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "string", "hash-table", "counting"]
-keywords: ["LC3889", "Medium", "N/A", "Mirror Frequency Distance", "Hash Table", "ASCII"]
-description: "LeetCode 第 3889 題：Mirror Frequency Distance。難度評分：Medium (N/A)。探討如何利用字元頻率統計 (Counting) 搭配 ASCII 編碼特性，以 O(N) 時間複雜度快速計算字串中對稱字元（字母與數字）的頻率差值總和。"
+keywords: ["LC3889", "Medium", "1312", "Mirror Frequency Distance", "Hash Table", "ASCII"]
+description: "LeetCode 第 3889 題：Mirror Frequency Distance。難度評分：Medium (1312)。探討如何利用字元頻率統計 (Counting) 搭配 ASCII 編碼特性，以 O(N) 時間複雜度快速計算字串中對稱字元（字母與數字）的頻率差值總和。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3889](https://leetcode.com/problems/mirror-frequency-distance/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1312)</span>  
 > **核心主題**：`String` $\cdot$ `Hash Table` $\cdot$ `Counting`
 
 ---

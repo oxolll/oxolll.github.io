@@ -2,7 +2,7 @@
 title: "LeetCode 3899. Angles of a Triangle"
 date: 2026-04-12T14:30:00+08:00
 lastmod: 2026-04-12T14:30:00+08:00
-difficulty: 1500
+difficulty: 1407
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "math", "geometry"]
-keywords: ["LC3899", "Medium", "N/A", "Angles of a Triangle", "Law of Cosines", "Geometry"]
-description: "LeetCode 第 3899 題：Angles of a Triangle。難度評分：Medium (N/A)。探討如何利用餘弦定理 (Law of Cosines) 計算三角形內角，並透過浮點數箝制 (Clamping) 技巧避免 acos 產生 NaN 錯誤，最後以 O(1) 時間複雜度求得所有內角。"
+keywords: ["LC3899", "Medium", "1407", "Angles of a Triangle", "Law of Cosines", "Geometry"]
+description: "LeetCode 第 3899 題：Angles of a Triangle。難度評分：Medium (1407)。探討如何利用餘弦定理 (Law of Cosines) 計算三角形內角，並透過浮點數箝制 (Clamping) 技巧避免 acos 產生 NaN 錯誤，最後以 O(1) 時間複雜度求得所有內角。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3899](https://leetcode.com/problems/angles-of-a-triangle/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1407)</span>  
 > **核心主題**：`Math` $\cdot$ `Geometry`
 
 ---

@@ -2,7 +2,7 @@
 title: "LeetCode 3886. Sum of Sortable Integers"
 date: 2026-03-29T13:15:00+08:00
 lastmod: 2026-03-29T13:15:00+08:00
-difficulty: 1800
+difficulty: 1999
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "math", "simulation"]
-keywords: ["LC3886", "Hard", "N/A", "Sortable Integers", "Array Chunking", "Cyclic Shift"]
-description: "LeetCode 第 3886 題：Sum of Sortable Integers。難度評分：Hard (N/A)。探討如何透過遍歷陣列因數進行區塊分割，並利用模擬驗證每個子區塊是否能透過循環位移達到排序狀態，進而求出所有合法長度的總和。"
+keywords: ["LC3886", "Hard", "1999", "Sortable Integers", "Array Chunking", "Cyclic Shift"]
+description: "LeetCode 第 3886 題：Sum of Sortable Integers。難度評分：Hard (1999)。探討如何透過遍歷陣列因數進行區塊分割，並利用模擬驗證每個子區塊是否能透過循環位移達到排序狀態，進而求出所有合法長度的總和。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3886](https://leetcode.com/problems/sum-of-sortable-integers/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (N/A)</span>  
+> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (1999)</span>  
 > **核心主題**：`Array` $\cdot$ `Math` $\cdot$ `Simulation`
 
 ---

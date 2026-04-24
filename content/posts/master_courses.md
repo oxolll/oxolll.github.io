@@ -7,7 +7,7 @@ ShowToc: false
 categories: ["Life & Misc"]
 tags: ["Career", "Master", "NYCU", "Review"]
 keywords: ["陽明交通大學", "修課心得", "研究生", "GPA", "學分", "NYCU CS"]
-weight: 1
+weight: 2
 ---
 
 <style>

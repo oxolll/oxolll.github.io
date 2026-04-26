@@ -2,7 +2,7 @@
 title: "LeetCode 3903. Smallest Stable Index I"
 date: 2026-04-19T15:25:00+08:00
 lastmod: 2026-04-19T15:25:00+08:00
-difficulty: 1200
+difficulty: 1234
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "prefix-sum", "math"]
 keywords: ["LC3903", "Easy", "Smallest Stable Index I", "Prefix Maximum", "Suffix Minimum"]
-description: "LeetCode 第 3903 題：Smallest Stable Index I。難度評分：Easy (N/A)。探討如何利用後綴陣列 (Suffix Array) 預先處理最小值，並配合動態維護的前綴最大值，以 O(N) 線性時間複雜度完美避開雙層迴圈的效能瓶頸。"
+description: "LeetCode 第 3903 題：Smallest Stable Index I。難度評分：Easy (1234)。探討如何利用後綴陣列 (Suffix Array) 預先處理最小值，並配合動態維護的前綴最大值，以 O(N) 線性時間複雜度完美避開雙層迴圈的效能瓶頸。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3903](https://leetcode.com/problems/smallest-stable-index-i/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1234)</span>  
 > **核心主題**：`Array` $\cdot$ `Prefix Maximum` $\cdot$ `Suffix Minimum`
 
 ---

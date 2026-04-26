@@ -2,7 +2,7 @@
 title: "LeetCode 3904. Smallest Stable Index II"
 date: 2026-04-19T15:35:00+08:00
 lastmod: 2026-04-19T15:35:00+08:00
-difficulty: 1500
+difficulty: 1351
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "prefix-sum", "math"]
 keywords: ["LC3904", "Medium", "Smallest Stable Index II", "Prefix Maximum", "Suffix Minimum"]
-description: "LeetCode 第 3904 題：Smallest Stable Index II。難度評分：Medium (N/A)。探討在測資範圍放大的情況下，如何利用後綴陣列 (Suffix Array) 預先處理最小值，並配合動態維護的前綴最大值，以 O(N) 線性時間複雜度完美避開雙層迴圈的效能瓶頸。"
+description: "LeetCode 第 3904 題：Smallest Stable Index II。難度評分：Medium (1351)。探討在測資範圍放大的情況下，如何利用後綴陣列 (Suffix Array) 預先處理最小值，並配合動態維護的前綴最大值，以 O(N) 線性時間複雜度完美避開雙層迴圈的效能瓶頸。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3904](https://leetcode.com/problems/smallest-stable-index-ii/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1351)</span>  
 > **核心主題**：`Array` $\cdot$ `Prefix Maximum` $\cdot$ `Suffix Minimum`
 > **🔗 系列題連結**：[👉 點此查看 Part I (LeetCode 3903) 題解筆記](../3903-smallest-stable-index-i/)
 

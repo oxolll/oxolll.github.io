@@ -9,7 +9,7 @@ ShowToc: true
 TocOpen: true
 # --- 數學公式設定 ---
 math: true
-weight: 3
+weight: 4
 categories: ["algorithm", "template"]
 tags: ["segment-tree", "data-structure", "range-query", "cpp", "template"]
 keywords: ["Segment Tree", "線段樹", "Lazy Propagation", "懶惰標記", "C++ Template", "Range Query"]
@@ -36,87 +36,88 @@ description: "競技程式與進階演算法必備模板：線段樹 (Segment Tr
 
 ### C++ 實作碼
 ```cpp
-#include <vector>
-using namespace std;
-
 class SegmentTree {
 private:
-    vector<long long> tree;
+    vector<long long>tree;
     int n;
+    long long identity = 0;
 
-    // 向上更新父節點 (Push Up)
-    void pushUp(int node) {
-        tree[node] = tree[node * 2 + 1] + tree[node * 2 + 2];
+    long long operate(long long left, long long right){
+        return 0; //left operator[] right
     }
 
-    // 遞迴建樹
-    void build(int node, int start, int end, const vector<int>& nums) {
-        if (start == end) {
-            tree[node] = nums[start];
+    void merge(int node){
+        tree[node] = operate(tree[node<<1], tree[(node<<1)|1]);
+    }
+
+    void build(int node, int l, int r, const vector<int>& nums){
+        if (l == r) 
+        {
+            tree[node] = nums[l-1];
             return;
         }
-        int mid = start + (end - start) / 2;
-        int left_node = node * 2 + 1;
-        int right_node = node * 2 + 2;
+
+        int mid = l + (r - l)/2;
         
-        build(left_node, start, mid, nums);
-        build(right_node, mid + 1, end, nums);
-        pushUp(node);
+        build(node<<1, l, mid, nums);
+        build((node<<1)|1, mid + 1, r, nums);
+        merge(node);
     }
 
-    // 遞迴單點修改 (將 index 的值加上 val)
-    void updatePoint(int node, int start, int end, int idx, long long val) {
-        if (start == end) {
-            tree[node] += val; // 若為取代值，可改為 tree[node] = val;
+    void update(int node, int l, int r, int idx, long long val){
+        if (l == r) 
+        {
+            tree[node] = val;
             return;
         }
-        int mid = start + (end - start) / 2;
-        int left_node = node * 2 + 1;
-        int right_node = node * 2 + 2;
+
+        int mid = l + (r-l)/2;
         
-        if (idx <= mid) {
-            updatePoint(left_node, start, mid, idx, val);
-        } else {
-            updatePoint(right_node, mid + 1, end, idx, val);
+        if(idx <= mid) 
+        {
+            update(node<<1, l, mid, idx, val);
+        } 
+        else 
+        {
+            update((node<<1)|1, mid + 1, r, idx, val);
         }
-        pushUp(node);
+
+        merge(node);
     }
 
-    // 遞迴區間查詢
-    long long queryRange(int node, int start, int end, int L, int R) {
-        // 1. 完全包含於查詢區間
-        if (L <= start && end <= R) {
+    long long query(int node, int l, int r, int L, int R){
+        if(r < L || R < l) 
+        {
+            return identity;
+        }
+
+        if(L <= l && r <= R) 
+        {
             return tree[node];
         }
-        // 2. 完全不交集 (視題目要求回傳，求和回傳 0，求極值回傳極小/極大值)
-        if (start > R || end < L) {
-            return 0; 
-        }
-        // 3. 部分交集，向左右子樹查詢
-        int mid = start + (end - start) / 2;
-        long long sum = 0;
-        if (L <= mid) sum += queryRange(node * 2 + 1, start, mid, L, R);
-        if (R > mid)  sum += queryRange(node * 2 + 2, mid + 1, end, L, R);
-        return sum;
+        
+        int mid = l + (r-l)/2;
+        long long left = query(node<<1, l, mid, L, R);
+        long long right = query((node<<1)|1, mid + 1, r, L, R);
+        return operate(left, right);
     }
 
 public:
-    // 建構子
-    SegmentTree(const vector<int>& nums) {
+    SegmentTree(const vector<int>& nums){
         n = nums.size();
-        if (n > 0) {
+        if (n > 0) 
+        {
             tree.assign(4 * n, 0);
-            build(0, 0, n - 1, nums);
+            build(1, 1, n, nums);
         }
     }
 
-    // 提供給外部呼叫的 API
-    void update(int idx, long long val) {
-        updatePoint(0, 0, n - 1, idx, val);
+    void update(int idx, long long val){
+        update(1, 1, n, idx, val);
     }
 
     long long query(int L, int R) {
-        return queryRange(0, 0, n - 1, L, R);
+        return query(1, 1, n, L, R);
     }
 };
 ```
@@ -130,9 +131,6 @@ public:
 
 ### C++ 實作碼
 ```cpp
-#include <vector>
-using namespace std;
-
 class LazySegmentTree {
 private:
     vector<long long> tree;

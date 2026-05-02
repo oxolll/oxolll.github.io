@@ -2,6 +2,7 @@
 title: "🛤️ 碩士生存指南：我的迷惘、撞牆與進化之路"
 date: 2026-02-18T10:00:00+08:00
 draft: false
+weight: 3
 categories: ["Life & Misc"]
 tags: ["Career", "Reflection", "Master", "NYCU", "Research"]
 keywords: ["陽明交通大學", "碩士生存", "CCC", "STOC", "k-SAT", "研究心得", "畢業感言"]

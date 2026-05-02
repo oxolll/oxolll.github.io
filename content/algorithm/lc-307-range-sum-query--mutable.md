@@ -1,7 +1,7 @@
 ---
 title: "LeetCode 307. Range Sum Query - Mutable"
 date: 2026-02-19T18:47:00+08:00
-lastmod: 2026-02-19T18:47:00+08:00
+lastmod: 2026-04-30T16:37:00+08:00
 difficulty: 1650
 draft: false
 hidden: false
@@ -12,13 +12,13 @@ TocOpen: false
 math: true
 categories: ["Algorithm"]
 tags: ["LeetCode", "Binary Indexed Tree (Fenwick Tree)", "Design", "Segment Tree"]
-keywords: ["LC307", "Medium", "BIT", "區間和"]
-description: "LeetCode 第 307 題：Range Sum Query - Mutable。難度評分：Medium。探討如何使用 Binary Indexed Tree (Fenwick Tree) 解決動態陣列的區間和查詢，並比較 O(N log N) 與 O(N) 兩種建樹方法的差異。"
+keywords: ["LC307", "Medium", "BIT", "區間和", "線段樹"]
+description: "LeetCode 第 307 題：Range Sum Query - Mutable。難度評分：Medium。探討如何使用 Binary Indexed Tree (Fenwick Tree) 與 Segment Tree (線段樹) 解決動態陣列的區間和查詢，並比較兩種資料結構的實作差異。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 307](https://leetcode.com/problems/range-sum-query-mutable/)  
-> **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">Medium(N/A)</span>  
+> **難度評分**：<span style="color: var(--diff-color); font-weight: bold;">Medium(1650)</span>  
 > **核心主題**：`Array` $\cdot$ `Design` $\cdot$ `Binary Indexed Tree` $\cdot$ `Segment Tree`
 
 ---
@@ -56,11 +56,102 @@ description: "LeetCode 第 307 題：Range Sum Query - Mutable。難度評分：
 ---
 
 ## 📝 歷次打卡與更新
-- [2026-02-19：初次提交 (熟悉 BIT 結構與 $\mathcal{O}(N)$ 建樹優化)](#2026-02-19-初次提交)
+- [2026-04-30：更新提交 (線段樹 Segment Tree 實作)](#2026-04-30-更新提交-線段樹)
+- [2026-02-19：初次提交 (熟悉 BIT 結構與 O(N) 建樹優化)](#2026-02-19-初次提交-bit)
 
 ---
 
-## 💡 2026-02-19 初次提交
+## 💡 2026-04-30 更新提交 (線段樹)
+
+### 🎯 演算法分析 (Algorithm Analysis)
+除了 BIT，這題也是練習**線段樹 (Segment Tree)** 的絕佳模板題。
+比起 BIT 只能處理「符合結合律且可逆」的操作（例如區間和），線段樹的擴充性更強，還可以處理區間最大/最小值 (Max/Min) 等不可逆操作。
+實作上，我們將底層線段樹設計為 $1$-indexed（根節點為 $1$），利用位元運算 `node << 1` 與 `(node << 1) | 1` 來快速存取左右子節點。
+而在呼叫 API 時，只需將原本 $0$-indexed 的查詢區間 `+1` 傳入，就能完美將介面與底層實作解耦。
+
+### 📊 複雜度分析
+- **時間複雜度**:
+  - **建樹 (Build)**: $\mathcal{O}(N)$。遞迴拜訪 $2N-1$ 個節點。
+  - **更新 (Update)**: $\mathcal{O}(\log N)$。
+  - **查詢 (Query)**: $\mathcal{O}(\log N)$。
+- **空間複雜度**: $\mathcal{O}(N)$。為了避免越界，線段樹標準做法會開到 $4N$ 的陣列空間。
+
+### 💻 程式碼實作 (C++)
+```cpp
+class NumArray {
+public:
+    vector<long long> tree;
+    int N;
+    
+    // 遞迴建樹 O(N)
+    void build(int node, int l, int r, vector<int>& nums) {
+        if(l == r) {
+            tree[node] = nums[l-1]; // nums 是 0-indexed，l 是 1-indexed
+            return;
+        }
+
+        int mid = l + (r - l) / 2;
+        build(node << 1, l, mid, nums);
+        build((node << 1) | 1, mid + 1, r, nums);
+
+        // Push Up
+        tree[node] = tree[node << 1] + tree[(node << 1) | 1];
+    }
+    
+    // 單點更新 O(log N)
+    void up(int node, int l, int r, int idx, long long val) {
+        if(l == r) {
+            tree[node] = val;
+            return;
+        }
+
+        int mid = l + (r - l) / 2;
+        if(mid >= idx) {
+            up(node << 1, l, mid, idx, val);
+        } else {
+            up((node << 1) | 1, mid + 1, r, idx, val);
+        }
+        
+        // Push Up
+        tree[node] = tree[node << 1] + tree[(node << 1) | 1];
+    }
+
+    // 區間查詢 O(log N)
+    long long q(int node, int l, int r, int L, int R) {
+        // 1. 完全不交集
+        if(r < L || R < l) return 0;
+        // 2. 完全包含
+        if(L <= l && r <= R) return tree[node];
+
+        // 3. 部分交集
+        int mid = l + (r - l) / 2;
+        long long left = q(node << 1, l, mid, L, R);
+        long long right = q((node << 1) | 1, mid + 1, r, L, R);
+
+        return left + right;
+    }
+    
+    NumArray(vector<int>& nums) {
+        N = nums.size();
+        tree = vector<long long>(4 * N, 0); // 確保空間不越界
+        build(1, 1, N, nums);
+    }
+    
+    void update(int index, int val) {
+        // 對齊 1-indexed
+        up(1, 1, N, index + 1, val);
+    }
+    
+    int sumRange(int left, int right) {
+        // 對齊 1-indexed
+        return q(1, 1, N, left + 1, right + 1);
+    }
+};
+```
+
+---
+
+## 💡 2026-02-19 初次提交 (BIT)
 
 ### 🎯 直覺 (Intuition)
 如果陣列是靜態的，我們可以用 Prefix Sum (前綴和) 在 $\mathcal{O}(1)$ 時間內算出區間和；但這題包含了 `update` 操作，如果用 Prefix Sum，每次更新都需要 $\mathcal{O}(N)$ 的時間去修改後面的所有值，一定會 TLE。

@@ -144,7 +144,8 @@ private:
     }
 
     long long query(int node, int l, int r, int L, int R){
-        if (L <= l && r <= R) return tree[node];
+        if(L > R) return 0;
+        if(L <= l && r <= R) return tree[node];
 
         pushDown(node, l, r);
 
@@ -232,7 +233,7 @@ private:
         }
     }
 
-    void build(int node, int l, int r, const vector<int>& nums) {
+    void build(int node, int l, int r, const vector<int>& nums){
         if(l == r) 
         {
             tree[node] = nums[l-1];
@@ -264,7 +265,8 @@ private:
     }
 
     long long query(int node, int l, int r, int L, int R){
-        if (L <= l && r <= R) return tree[node];
+        if(L > R) return 0; 
+        if(L <= l && r <= R) return tree[node];
 
         // pushDown(node, l, r);
 

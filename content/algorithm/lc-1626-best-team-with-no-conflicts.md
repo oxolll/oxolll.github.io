@@ -1,5 +1,5 @@
 ---
-title: "🧩 LeetCode 1626. Best Team With No Conflicts"
+title: "LeetCode 1626. Best Team With No Conflicts"
 date: 2026-05-04T17:30:00+08:00
 lastmod: 2026-05-04T17:40:00+08:00
 difficulty: 2027

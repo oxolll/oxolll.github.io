@@ -2,7 +2,7 @@
 title: "LeetCode 3913. Sort Vowels by Frequency"
 date: 2026-04-26T15:30:00+08:00
 lastmod: 2026-04-26T15:30:00+08:00
-difficulty: 1500
+difficulty: 1524
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3913 題：Sort Vowels by Frequency。探討如何利
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3913](https://leetcode.com/problems/sort-vowels-by-frequency/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1524)</span>  
 > **核心主題**：`String` $\cdot$ `Sorting` $\cdot$ `Hash Table`
 
 ---

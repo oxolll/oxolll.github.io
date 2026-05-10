@@ -2,7 +2,7 @@
 title: "LeetCode 3912. Valid Elements in an Array"
 date: 2026-04-26T15:23:00+08:00
 lastmod: 2026-04-26T15:23:00+08:00
-difficulty: 1200
+difficulty: 1273
 draft: false
 hidden: false
 # --- 目錄設定 ---

@@ -2,7 +2,7 @@
 title: "LeetCode 3908. Valid Digit Number"
 date: 2026-04-26T01:10:00+08:00
 lastmod: 2026-04-26T01:10:00+08:00
-difficulty: 1200
+difficulty: 1319
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3908 題：Valid Digit Number。探討如何利用數
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3908](https://leetcode.com/problems/valid-digit-number/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1319)</span>  
 > **核心主題**：`Math` $\cdot$ `Simulation`
 
 ---

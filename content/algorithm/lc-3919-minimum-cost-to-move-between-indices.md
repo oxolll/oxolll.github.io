@@ -2,7 +2,7 @@
 title: "LeetCode 3919. Minimum Cost to Move Between Indices"
 date: 2026-05-03T12:25:00+08:00
 lastmod: 2026-05-03T12:25:00+08:00
-difficulty: 1800
+difficulty: 1776
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3919 題：Minimum Cost to Move Between Indices。探
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3919](https://leetcode.com/problems/minimum-cost-to-move-between-indices/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1776)</span>  
 > **核心主題**：`Array` $\cdot$ `Prefix Sum`
 
 ---

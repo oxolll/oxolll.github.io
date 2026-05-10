@@ -2,7 +2,7 @@
 title: "LeetCode 3918. Sum of Primes Between Number and Its Reverse"
 date: 2026-05-03T12:35:00+08:00
 lastmod: 2026-05-03T12:35:00+08:00
-difficulty: 1500
+difficulty: 1301
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3918 題：Sum of Primes Between Number and Its Rever
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3918](https://leetcode.com/problems/sum-of-primes-between-number-and-its-reverse/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1301)</span>  
 > **核心主題**：`Math` $\cdot$ `Number Theory` $\cdot$ `Sieve of Eratosthenes`
 
 ---

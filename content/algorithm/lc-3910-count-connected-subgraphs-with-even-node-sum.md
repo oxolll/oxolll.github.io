@@ -2,7 +2,7 @@
 title: "LeetCode 3910. Count Connected Subgraphs with Even Node Sum"
 date: 2026-04-26T01:21:00+08:00
 lastmod: 2026-04-26T01:21:00+08:00
-difficulty: 1900
+difficulty: 1859
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3910 題：Count Connected Subgraphs with Even Node S
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3910](https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (N/A)</span>  
+> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (1859)</span>  
 > **核心主題**：`Graph` $\cdot$ `DFS` $\cdot$ `Bitmask` $\cdot$ `Enumeration`
 
 ---

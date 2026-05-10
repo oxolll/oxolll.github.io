@@ -2,7 +2,7 @@
 title: "LeetCode 3914. Minimum Operations to Make Array Non Decreasing"
 date: 2026-04-26T15:35:00+08:00
 lastmod: 2026-04-26T15:35:00+08:00
-difficulty: 1500
+difficulty: 1662
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3914 題：Minimum Operations to Make Array Non Decre
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3914](https://leetcode.com/problems/minimum-operations-to-make-array-non-decreasing/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1662)</span>  
 > **核心主題**：`Array` $\cdot$ `Greedy` $\cdot$ `Math`
 
 ---

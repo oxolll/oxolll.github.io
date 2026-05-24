@@ -2,7 +2,7 @@
 title: "LeetCode 3933. Largest Local Values in a Matrix II"
 date: 2026-05-18T01:30:00+08:00
 lastmod: 2026-05-18T01:30:00+08:00
-difficulty: 2000
+difficulty: 2052
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "matrix", "precomputation", "rmq", "simulation"]
 keywords: ["LC3933", "Medium", "Local Maximum", "Range Maximum", "矩陣模擬", "區間極值"]
-description: "LeetCode 第 3933 題：Largest Local Values in a Matrix II。難度評分：Medium。探討如何利用行內區間最大值預處理 (RMQ)，高效判定變動半徑且去頂點正方形鄰域內的局部最大值數量。"
+description: "LeetCode 第 3933 題：Largest Local Values in a Matrix II。難度評分：Medium(2052)。探討如何利用行內區間最大值預處理 (RMQ)，高效判定變動半徑且去頂點正方形鄰域內的局部最大值數量。"
 ---
 
 ## 📊 題目資訊
 > **核心主題**：`Matrix` $\cdot$ `Precomputation` $\cdot$ `Simulation`  
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (2052)</span>
 
 ---
 

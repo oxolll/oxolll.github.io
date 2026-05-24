@@ -2,7 +2,7 @@
 title: "LeetCode 3932. Count K-th Roots in a Range"
 date: 2026-05-18T01:25:00+08:00
 lastmod: 2026-05-18T01:25:00+08:00
-difficulty: 1500
+difficulty: 1548
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "math", "binary-search", "enumeration"]
 keywords: ["LC3932", "Medium", "K-th Roots", "二分搜尋", "完美冪次", "溢位處理"]
-description: "LeetCode 第 3932 題：Count K-th Roots in a Range。難度評分：Medium。探討如何利用數學上高次冪快速增長的特性，配合邊界特判與二分搜尋，高效計算區間內的完美 $k$ 次方數數量。"
+description: "LeetCode 第 3932 題：Count K-th Roots in a Range。難度評分：Medium(1548)。探討如何利用數學上高次冪快速增長的特性，配合邊界特判與二分搜尋，高效計算區間內的完美 $k$ 次方數數量。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3932](https://leetcode.com/problems/count-k-th-roots-in-a-range/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1548)</span>  
 > **核心主題**：`Math` $\cdot$ `Binary Search` $\cdot$ `Enumeration`
 
 ---

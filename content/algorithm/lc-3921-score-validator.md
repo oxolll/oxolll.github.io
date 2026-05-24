@@ -2,7 +2,7 @@
 title: "LeetCode 3921. Score Validator"
 date: 2026-05-10T17:15:00+08:00
 lastmod: 2026-05-10T17:15:00+08:00
-difficulty: 1200
+difficulty: 1262
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "simulation", "string", "array"]
 keywords: ["LC3921", "Easy", "Score Validator", "板球計分", "模擬題"]
-description: "LeetCode 第 3921 題：Score Validator。難度評分：Easy。探討如何利用單次線性掃描 (Linear Scan) 處理各類運動計分事件，並精確控制比賽結束的邊界條件。"
+description: "LeetCode 第 3921 題：Score Validator。難度評分：Easy(1262)。探討如何利用單次線性掃描 (Linear Scan) 處理各類運動計分事件，並精確控制比賽結束的邊界條件。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3921](https://leetcode.com/problems/score-validator/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1262)</span>  
 > **核心主題**：`String` $\cdot$ `Simulation`
 
 ---

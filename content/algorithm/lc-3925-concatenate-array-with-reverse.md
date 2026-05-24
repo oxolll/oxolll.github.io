@@ -2,7 +2,7 @@
 title: "LeetCode 3925. Concatenate Array With Reverse"
 date: 2026-05-10T19:55:00+08:00
 lastmod: 2026-05-10T19:55:00+08:00
-difficulty: 1200
+difficulty: 1176
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "simulation", "two-pointers"]
 keywords: ["LC3925", "Easy", "Concatenate", "Reverse", "對稱填充", "陣列操作"]
-description: "LeetCode 第 3925 題：Concatenate Array With Reverse。難度評分：Easy。探討如何利用陣列對稱索引的物理特性，在 $O(n)$ 時間內完成原序與反序的無縫拼接。"
+description: "LeetCode 第 3925 題：Concatenate Array With Reverse。難度評分：Easy(1176)。探討如何利用陣列對稱索引的物理特性，在 $O(n)$ 時間內完成原序與反序的無縫拼接。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3925](https://leetcode.com/problems/concatenate-array-with-reverse/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1176)</span>  
 > **核心主題**：`Array` $\cdot$ `Simulation`
 
 ---

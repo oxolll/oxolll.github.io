@@ -2,7 +2,7 @@
 title: "LeetCode 3922. Minimum Flips to Make Binary String Coherent"
 date: 2026-05-10T19:30:00+08:00
 lastmod: 2026-05-10T19:30:00+08:00
-difficulty: 1500
+difficulty: 1759
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3922 題：Minimum Flips to Make Binary String Cohere
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3922](https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1759)</span>  
 > **核心主題**：`String` $\cdot$ `Greedy` $\cdot$ `Counting`
 
 ---

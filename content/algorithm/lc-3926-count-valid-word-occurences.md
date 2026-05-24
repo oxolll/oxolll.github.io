@@ -2,7 +2,7 @@
 title: "LeetCode 3926. Count Valid Word Occurrences"
 date: 2026-05-10T20:20:00+08:00
 lastmod: 2026-05-10T20:20:00+08:00
-difficulty: 1500
+difficulty: 1608
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "string", "hash-map", "simulation"]
 keywords: ["LC3926", "Medium", "Word Count", "String Cleaning", "字串處理", "雜湊表"]
-description: "LeetCode 第 3926 題：Count Valid Word Occurrences。難度評分：Medium。探討如何處理大型字串分片，透過邊界過濾與合法單字判定規則，高效統計特定單字的出現頻率。"
+description: "LeetCode 第 3926 題：Count Valid Word Occurrences。難度評分：Medium(1608)。探討如何處理大型字串分片，透過邊界過濾與合法單字判定規則，高效統計特定單字的出現頻率。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3926](https://leetcode.com/problems/count-valid-word-occurrences/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1608)</span>  
 > **核心主題**：`String` $\cdot$ `Hash Map` $\cdot$ `Simulation`
 
 ---

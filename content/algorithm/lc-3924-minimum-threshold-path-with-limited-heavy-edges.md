@@ -2,7 +2,7 @@
 title: "LeetCode 3924. Minimum Threshold Path With Limited Heavy Edges"
 date: 2026-05-14T20:00:00+08:00
 lastmod: 2026-05-14T20:00:00+08:00
-difficulty: 2200
+difficulty: 2079
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3924 題：Minimum Threshold Path With Limited Heavy 
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3924](https://leetcode.com/problems/minimum-threshold-path-with-limited-heavy-edges/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (N/A)</span>  
+> **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (2079)</span>  
 > **核心主題**：`Binary Search` $\cdot$ `Shortest Path` $\cdot$ `0-1 BFS`
 
 ---

@@ -2,7 +2,7 @@
 title: "LeetCode 3931. Check Adjacent Digit Differences"
 date: 2026-05-18T01:20:00+08:00
 lastmod: 2026-05-18T01:20:00+08:00
-difficulty: 1200
+difficulty: 1165
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -13,12 +13,12 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "string", "simulation"]
 keywords: ["LC3931", "Easy", "Adjacent Differences", "字串處理", "相鄰差值"]
-description: "LeetCode 第 3931 題：Check Adjacent Digit Differences。難度評分：Easy。探討如何利用字元 ASCII 碼的連續性，在單次線性掃描中高效檢查相鄰數字的差值是否符合限制。"
+description: "LeetCode 第 3931 題：Check Adjacent Digit Differences。難度評分：Easy(1165)。探討如何利用字元 ASCII 碼的連續性，在單次線性掃描中高效檢查相鄰數字的差值是否符合限制。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3931](https://leetcode.com/problems/check-adjacent-digit-differences/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (N/A)</span>  
+> **難度評分**：<span style="color: #00b8a3; font-weight: bold;">Easy (1165)</span>  
 > **核心主題**：`String` $\cdot$ `Simulation`
 
 ---

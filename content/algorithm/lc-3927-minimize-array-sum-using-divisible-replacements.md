@@ -2,7 +2,7 @@
 title: "LeetCode 3927. Minimize Array Sum Using Divisible Replacements"
 date: 2026-05-10T20:35:00+08:00
 lastmod: 2026-05-10T20:35:00+08:00
-difficulty: 1500
+difficulty: 1651
 draft: false
 hidden: false
 # --- 目錄設定 ---
@@ -18,7 +18,7 @@ description: "LeetCode 第 3927 題：Minimize Array Sum Using Divisible Replace
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3927](https://leetcode.com/problems/minimize-array-sum-using-divisible-replacements/) *(註：題號對應依據實際題庫)*
-> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (N/A)</span>  
+> **難度評分**：<span style="color: #ffc01e; font-weight: bold;">Medium (1651)</span>  
 > **核心主題**：`Greedy` $\cdot$ `Math` $\cdot$ `Hash Map`
 
 ---

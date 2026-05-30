@@ -1,7 +1,7 @@
 ---
 title: "LeetCode 3161. Block Placement Queries"
 date: 2026-05-30T21:30:00+08:00
-lastmod: 2026-05-30T21:30:00+08:00
+lastmod: 2026-05-30T22:15:00+08:00
 difficulty: 2513
 draft: false
 hidden: false
@@ -11,15 +11,15 @@ TocOpen: false
 # --- 數學公式設定 ---
 math: true
 categories: ["algorithm"]
-tags: ["leetcode", "segment-tree", "binary-search-tree", "array"]
-keywords: ["LC3161", "Hard", "2513", "Block Placement Queries", "線段樹", "區間最大值", "動態維護"]
-description: "LeetCode 第 3161 題：Block Placement Queries。難度評分：2513。探討如何結合平衡二元搜尋樹 (std::set) 尋找鄰居節點，並利用線段樹 (Segment Tree) 動態維護區間最大空白長度，以 O(Q log X) 高效處理障礙物放置與方塊查詢問題。"
+tags: ["leetcode", "segment-tree", "binary-search-tree", "disjoint-set", "fenwick-tree", "array"]
+keywords: ["LC3161", "Hard", "2513", "Block Placement Queries", "線段樹", "併查集", "樹狀陣列", "時光倒流", "倒序處理"]
+description: "LeetCode 第 3161 題：Block Placement Queries。探討如何使用線段樹與平衡樹進行正向動態維護，以及如何利用「時光倒流 (Reverse Processing)」技巧結合併查集與樹狀陣列，將複雜度壓制到極限。"
 ---
 
 ## 📊 題目資訊
 > **題目連結**：[LeetCode 3161](https://leetcode.com/problems/block-placement-queries/)  
 > **難度評分**：<span style="color: #ff375f; font-weight: bold;">Hard (2513)</span>  
-> **核心主題**：`Segment Tree` $\cdot$ `Binary Search Tree (std::set)`
+> **核心主題**：`Segment Tree` $\cdot$ `Disjoint Set (DSU)` $\cdot$ `Fenwick Tree (BIT)`
 
 ---
 
@@ -35,15 +35,6 @@ description: "LeetCode 第 3161 題：Block Placement Queries。難度評分：2
 
 請回傳一個布林陣列，依序包含所有類型 2 查詢的結果。
 
-### 範例
-- **Input**: `queries = [[1, 2], [2, 3, 3], [2, 3, 1], [2, 2, 2]]`
-- **Output**: `[false, true, true]`
-- **Explanation**:
-  - `[1, 2]`：在 `x = 2` 放置障礙物。
-  - `[2, 3, 3]`：在 `[0, 3]` 放長度 3 的方塊。由於有障礙物在 2，空白區間為 `[0, 2]` (長度 2) 和 `[2, 3]` (長度 1)，皆小於 3，回傳 `false`。
-  - `[2, 3, 1]`：在 `[0, 3]` 放長度 1 的方塊。可放在 `[0, 1]` 或 `[2, 3]`，回傳 `true`。
-  - `[2, 2, 2]`：在 `[0, 2]` 放長度 2 的方塊。剛好放在 `[0, 2]`，回傳 `true`。
-
 ### 限制條件
 - $1 \le queries.length \le 1.5 \cdot 10^5$
 - $2 \le x \le 5 \cdot 10^4$
@@ -53,63 +44,18 @@ description: "LeetCode 第 3161 題：Block Placement Queries。難度評分：2
 ---
 
 ## 📝 歷次打卡與更新
-- [2026-05-30：初次提交 (Set 鄰居查找 + 線段樹區間最大值)](#2026-05-30-初次提交)
+- [2026-05-30：新增解法二 (時光倒流 + 併查集 + 樹狀陣列最優解)](#解法二-時光倒流-併查集--樹狀陣列-常數極小最優解)
+- [2026-05-30：初次提交 (Set 鄰居查找 + 線段樹區間最大值)](#解法一-正向處理--stdset--線段樹)
 
 ---
 
-## 💡 2026-05-30 初次提交
+## 💡 解法一：正向處理 + `std::set` + 線段樹
 
-### 🎯 演算法分析 (Algorithm Analysis)
-要快速回答「區間 `[0, x]` 內是否有長度 $\ge sz$ 的空白」，我們需要維護所有被障礙物分割出來的「空白線段長度」，並且能快速查詢這些長度中的「最大值」。這正是 **線段樹 (Segment Tree)** 的標準應用。
-
-**核心破局點 1：線段樹的儲存定義**
-如果線段樹維護的是「區間內的具體線段」，合併狀態會非常複雜。
-我們可以轉換視角：**讓線段樹在座標 $P$ 處，記錄「以 $P$ 點為右端點的空白線段長度」**。
-例如，若障礙物分別在 $0, 2, 5$，則線段樹在座標 $2$ 的值為 $2 - 0 = 2$，在座標 $5$ 的值為 $5 - 2 = 3$。
-這樣查詢 `[0, x]` 內的最大空白，就等於查詢線段樹在區間 `[1, x]` 內的最大值。
-
-**核心破局點 2：動態新增障礙物的區間分裂**
-當我們在 $x$ 新增一個障礙物時，原本的區間 $(pre, nex)$ 會被切成兩段：$(pre, x)$ 與 $(x, nex)$。
-利用 `std::set` 找出左鄰居 $pre$ 與右鄰居 $nex$，我們只需要進行兩次線段樹單點更新：
-- 更新座標 $x$ 的值為 $x - pre$。
-- 更新座標 $nex$ 的值為 $nex - x$。
-
-**核心破局點 3：查詢時的碎邊處理 (Partial Segment)**
-當我們查詢 `[0, x]` 時，最大的空白可能來自兩種情況：
-1. **完整的區間**：在 $x$ 之前的兩個障礙物所夾出的區間（可透過線段樹 `qry(1, x)` 直接查出）。
-2. **邊緣的碎區間**：從 $x$ 左邊的最後一個障礙物 $pre$ 一直到 $x$ 的這段距離（這段可能沒有以障礙物收尾，線段樹查不到，需手動計算為 $x - pre$）。
-最終的最大長度即為 `max(qry(1, x), x - pre)`。
-
----
-
-### 🛠️ 解題思路 (Approach)
-1. **初始化**：
-   - 座標最大值限制為 $50000$，宣告大小為 $50005$ 的線段樹。
-   - `std::set<int> s` 初始化加入 `0` 與邊界 `50001`。
-2. **處理操作 1 (新增障礙物 `x`)**：
-   - 插入 `x` 到 `s`。
-   - 透過 `lower_bound` 找到 `x` 的左右鄰居 `pre` 與 `nex`。
-   - 線段樹單點更新 (Point Update)：
-     - 將 $x$ (實作上平移為 $x+1$) 的值更新為 $x - pre$。
-     - 將 $nex$ (實作上平移為 $nex+1$) 的值更新為 $nex - x$。
-3. **處理操作 2 (查詢區間 `[0, x]`)**：
-   - 在 `s` 中尋找嚴格小於等於 $x$ 的最後一個障礙物 `pre` (`*prev(s.lower_bound(x+1))`，在程式碼中用 `s.lower_bound(x)` 找到剛好 $\ge x$ 的前一個元素)。
-   - 線段樹查詢 (Range Query)：取得 `[1, x]` 的最大值。
-   - 結算最大空白長度：`mx = max(qry(1, x+1), x - pre)`。
-   - 若 `mx >= sz`，回傳 `true`；否則回傳 `false`。
-
----
-
-### 📊 複雜度分析
-- **時間複雜度**: $\mathcal{O}(Q \log (\max X))$。
-  - 對於每個查詢，`std::set` 的操作耗時 $\mathcal{O}(\log (\max X))$。
-  - 線段樹的單點更新與區間查詢同樣耗時 $\mathcal{O}(\log (\max X))$。
-  - 總時間複雜度極佳，能輕鬆通過 $1.5 \cdot 10^5$ 次查詢。
-- **空間複雜度**: $\mathcal{O}(\max X + Q)$。
-  - 線段樹需要 $4 \times \max X$ 的陣列大小。
-  - `std::set` 最多儲存 $Q$ 個障礙物座標。
-
----
+### 🎯 演算法分析
+正向思考時，我們需要動態維護被障礙物切割的「空白線段長度」。
+1. 利用 `std::set` 儲存所有障礙物的座標，這樣可以在 $\mathcal{O}(\log N)$ 時間內利用 `lower_bound` 找到新增障礙物時的左右鄰居。
+2. 讓線段樹在座標 $P$ 處，記錄「以 $P$ 點為右端點的空白線段長度」。當在 $x$ 新增障礙物時，原本的區間 $(pre, nex)$ 會被切成兩段，我們只需進行兩次單點更新。
+3. 查詢 `[0, x]` 時，最大空白可能來自「完整的區間 (透過線段樹查詢)」或「邊緣被 $x$ 截斷的碎區間 (手動計算 $x - pre$)」，兩者取最大值即可。
 
 ### 💻 程式碼實作 (C++)
 ```cpp
@@ -118,88 +64,188 @@ public:
     vector<int> tree;
     int N;
 
-    // 線段樹：向上合併，取子區間的最大值
-    void pushUp(int node) { 
-        tree[node] = max(tree[node << 1], tree[node << 1 | 1]); 
-    }
-
-    // 線段樹：單點更新
+    void pushUp(int node) { tree[node] = max(tree[node<<1], tree[node<<1|1]); }
+    
     void upd(int node, int l, int r, int L, int R, int val) {
         if(L > R) return;
-        
-        // 找到目標單點
         if(L <= l && r <= R) {
             tree[node] = val;
             return;
         }
-
-        int mid = l + (r - l) / 2;
-        if(L <= mid) upd(node << 1, l, mid, L, R, val);
-        if(R > mid) upd(node << 1 | 1, mid + 1, r, L, R, val);
-
+        int mid = l + (r-l)/2;
+        if(L <= mid) upd(node<<1, l, mid, L, R, val);
+        if(R > mid) upd(node<<1|1, mid+1, r, L, R, val);
         pushUp(node);
     }
-
-    // 線段樹：區間查詢最大值
+    
     int qry(int node, int l, int r, int L, int R) {
         if(L > R) return 0;
-        
         if(L <= l && r <= R) return tree[node];
-
-        int mid = l + (r - l) / 2;
+        int mid = l + (r-l)/2;
         int rt = 0;
-        if(L <= mid) rt = max(rt, qry(node << 1, l, mid, L, R));
-        if(R > mid) rt = max(rt, qry(node << 1 | 1, mid + 1, r, L, R));
-
+        if(L <= mid) rt = max(rt, qry(node<<1, l, mid, L, R));
+        if(R > mid) rt = max(rt, qry(node<<1|1, mid+1, r, L, R));
         return rt;
     }
-
+    
     vector<bool> getResults(vector<vector<int>>& queries) {
-        // 依據題目限制，座標最大為 50000
         N = 50005;
-        tree.assign(4 * N, 0);
-        
+        tree.assign(4*N, 0);
         set<int> s;
-        s.insert(0);      // 初始障礙物
-        s.insert(50001);  // 右方虛擬邊界
+        s.insert(0);
+        s.insert(50001);
 
         vector<bool> rt;
-        
         for(auto& q : queries) {
-            // 操作 1：放置障礙物
             if(q.size() == 2) {
                 int x = q[1];
                 s.insert(x);
-                
+                auto it = s.lower_bound(x);
+                int pre = *prev(it), nex = *next(it);
+                upd(1, 1, N, x+1, x+1, x - pre);
+                upd(1, 1, N, nex+1, nex+1, nex - x);
+            } else {
+                int x = q[1], sz = q[2];
                 auto it = s.lower_bound(x);
                 int pre = *prev(it);
-                int nex = *next(it);
-                
-                // 1-based index 處理：座標平移 +1
-                // 切割舊區間，建立 x 與其左鄰居的距離
-                upd(1, 1, N, x + 1, x + 1, x - pre);
-                // 更新右鄰居與 x 的新距離
-                upd(1, 1, N, nex + 1, nex + 1, nex - x);
+                int mx = max(qry(1, 1, N, 1, x+1), x - pre);
+                rt.push_back(mx >= sz);
             }
-            // 操作 2：查詢區間能否放下 sz 的方塊
-            else {
-                int x = q[1], sz = q[2];
-                
-                auto it = s.lower_bound(x);
-                // 找出 x 左邊最近的障礙物 (包含 x 本身若 x 剛好是障礙物)
-                int pre = *prev(it); 
-                
-                // 最大空白長度 = max(區間內完整的障礙物間距, 最右側被截斷的碎邊間距)
-                int mx = max(qry(1, 1, N, 1, x + 1), x - pre);
-                
-                if(mx >= sz) {
-                    rt.push_back(true);
-                } else {
-                    rt.push_back(false);
-                }
+        }
+        return rt;
+    }
+};
+```
+
+---
+
+## 💡 解法二：時光倒流 + 併查集 + 樹狀陣列 (常數極小最優解)
+
+### 🎯 演算法分析
+這是一種極度優雅且常數極小的降維打擊作法。
+一般來說，**樹狀陣列 (Fenwick Tree / BIT)** 只能求前綴和，很難求前綴最大值，因為當某個位置的數值變小時，BIT 無法有效向下更新。而在本題正向操作中，新增障礙物會把大區間切小，這對 BIT 是致命傷。
+
+**核心破局點 1：時光倒流 (Reverse Time Processing)**
+如果我們**將所有查詢倒過來處理**，原本的「新增障礙物」就變成了「移除障礙物」。
+移除一個障礙物，會讓左右兩個小空白區間**合併成一個大空白區間**。這意味著在倒序處理的過程中，空白區間長度**只會單調遞增，永遠不會變小**！這完美滿足了 BIT 求前綴最大值的條件，讓我們可以徹底捨棄笨重的線段樹。
+
+**核心破局點 2：併查集 (DSU) 找左鄰居**
+正向解法用了 `std::set` 去找左邊的障礙物，會消耗 $\mathcal{O}(\log N)$。
+我們可以使用併查集：將所有「沒有障礙物」的座標強制與左邊合併 (`parent[i] = i - 1`)。
+如此一來，對任何座標執行 `find(x)`，併查集會瞬間跳過所有沒有障礙物的點，直接回傳 $x$ 左邊最近的障礙物座標！時間複雜度降至 $\mathcal{O}(\alpha(N))$。
+
+### 🛠️ 解題思路 (Approach)
+1. **建立最終狀態**：先掃描一次所有查詢，記錄出經過所有「放置障礙物」操作後，最終的障礙物分佈 (`obs` 陣列)。
+2. **初始化併查集與 BIT**：
+   - 如果 `obs[i] == false`，則 `parent[i] = i - 1`。
+   - 計算最終狀態下，相鄰障礙物的距離，並寫入 BIT (`upd(i+1, i - last)`)。同時記錄 `right[last] = i`。
+3. **倒序處理查詢**：
+   - **遇到查詢 (`q[0] == 2`)**：利用 `L = find(x-1)` 找出左邊界，然後 `max(qry(L+1), x-L)` 即為最大空白。
+   - **遇到移除 (`q[0] == 1`)**：拔除座標 $x$ 的障礙物。找出左鄰居 `L = find(x-1)` 與右鄰居 `R = right[x]`。合併空間 `parent[x] = L`，並更新右指標 `right[L] = R`。接著把新合併的龐大長度 `R - L` 更新到 BIT 中 (`upd(R+1, R-L)`)。
+4. **反轉結果**：因為查詢是倒序做的，最後將答案陣列 `reverse()` 即可。
+
+### 📊 複雜度分析
+- **時間複雜度**: $\mathcal{O}(Q \log (\max X))$。雖然和線段樹同級，但 BIT 和 DSU 的常數極小，實戰速度碾壓線段樹與 `std::set`。
+- **空間複雜度**: $\mathcal{O}(\max X)$。使用了純陣列實作的 BIT 與 DSU。
+
+### 💻 程式碼實作 (C++)
+```cpp
+class Solution {
+public:
+    vector<int> tree;
+    vector<int> parent;
+    vector<int> right;
+    int N;
+    
+    // 併查集：尋找左側最近的障礙物
+    int find(int x) {
+        return parent[x] == x ? x : parent[x] = find(parent[x]);
+    }
+    
+    // 樹狀陣列 (BIT)：更新前綴最大值 (僅支援單調遞增)
+    void upd(int idx, int val) {
+        while(idx <= tree.size()) {
+            tree[idx] = max(tree[idx], val);
+            idx += (idx & -idx);
+        }
+    }
+    
+    // 樹狀陣列 (BIT)：查詢前綴最大值
+    int qry(int idx) {
+        int mx = 0;
+        while(idx > 0) {
+            mx = max(mx, tree[idx]);
+            idx -= (idx & -idx);
+        }
+        return mx;
+    }
+    
+    vector<bool> getResults(vector<vector<int>>& queries) {
+        N = 50000;
+        tree.assign(N + 5, 0);
+        parent.assign(N + 5, 0);
+        right.assign(N + 5, 0);
+
+        vector<bool> obs(N + 5, false);
+        obs[0] = true; // 座標 0 始終有障礙物
+
+        // 1. 預處理：找出經過所有操作後的「最終障礙物狀態」
+        for(auto& q : queries) {
+            if(q.size() == 2) obs[q[1]] = true;
+        }
+
+        // 2. 初始化併查集：若無障礙物，則與左邊座標合併
+        for(int i = 1; i <= N; ++i) {
+            parent[i] = i;
+            if(!obs[i]) {
+                parent[i] = i - 1;
             }
         }
 
+        // 3. 初始化 BIT：將最終狀態的區間長度寫入
+        int last = 0;
+        for(int i = 1; i <= N; ++i) {
+            if(obs[i]) {
+                right[last] = i;
+                upd(i + 1, i - last); // BIT 為 1-based index
+                last = i;
+            }
+        }
+        right[last] = N;
+        upd(N + 1, N - last);
+
+        vector<bool> rt;
+        
+        // 4. 時光倒流：由後往前處理操作
+        for(int i = queries.size() - 1; i >= 0; --i) {
+            auto& q = queries[i];
+            
+            // 操作 1：在倒序中代表「移除」障礙物
+            if(q[0] == 1) {
+                int x = q[1];
+                int L = find(x - 1);  // 尋找左鄰居
+                int R = right[x];     // 尋找右鄰居
+                
+                // 拔除 x 的障礙物，將其與左邊合併
+                parent[x] = L;
+                right[L] = R;
+                
+                // 區間合併，長度變大 (R - L)，更新至 BIT
+                upd(R + 1, R - L);
+            }
+            // 操作 2：區間查詢
+            else {
+                int x = q[1], sz = q[2];
+                int L = find(x - 1);
+                
+                // 最大空白 = max(完整區間的最大值, 被 x 截斷的邊緣區間)
+                int mx = max(qry(L + 1), x - L);
+                rt.push_back(mx >= sz);
+            }
+        }
+
+        // 5. 因為是倒序處理，最後必須將結果反轉
+        reverse(rt.begin(), rt.end());
         return rt;
     }
 };

@@ -2,7 +2,7 @@
 title: "LeetCode 3938. Maximum Path Intersection Sum in a Grid"
 date: 2026-05-24T15:45:00+08:00
 lastmod: 2026-05-24T15:45:00+08:00
-difficulty: 1800
+difficulty: 2251
 draft: false
 hidden: false
 # --- 目錄設定 ---

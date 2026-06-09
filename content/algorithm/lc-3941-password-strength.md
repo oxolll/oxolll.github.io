@@ -2,7 +2,7 @@
 title: "LeetCode 3941. Password Strength"
 date: 2026-05-24T16:00:00+08:00
 lastmod: 2026-05-24T16:00:00+08:00
-difficulty: 1800
+difficulty: 1284
 draft: false
 hidden: false
 # --- 目錄設定 ---

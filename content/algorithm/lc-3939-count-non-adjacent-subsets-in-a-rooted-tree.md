@@ -2,7 +2,7 @@
 title: "LeetCode 3939. Count Non Adjacent Subsets in a Rooted Tree"
 date: 2026-05-25T20:00:00+08:00
 lastmod: 2026-05-25T20:00:00+08:00
-difficulty: 2000
+difficulty: 2354
 draft: false
 hidden: false
 # --- 目錄設定 ---

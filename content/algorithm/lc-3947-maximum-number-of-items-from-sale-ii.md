@@ -2,7 +2,7 @@
 title: "LeetCode 3947. Maximum Number of Items From Sale II"
 date: 2026-06-03T16:00:00+08:00
 lastmod: 2026-06-03T16:00:00+08:00
-difficulty: 1700
+difficulty: 2215
 draft: false
 hidden: false
 # --- 目錄設定 ---

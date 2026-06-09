@@ -2,7 +2,7 @@
 title: "LeetCode 3936. Minimum Swaps to Move Zeros to End"
 date: 2026-05-24T15:30:00+08:00
 lastmod: 2026-05-24T15:30:00+08:00
-difficulty: 1200
+difficulty: 1346
 draft: false
 hidden: false
 # --- 目錄設定 ---

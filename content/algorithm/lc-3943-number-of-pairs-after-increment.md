@@ -2,7 +2,7 @@
 title: "LeetCode 3943. Number of Pairs After Increment"
 date: 2026-05-27T01:30:00+08:00
 lastmod: 2026-05-27T01:30:00+08:00
-difficulty: 2000
+difficulty: 2409
 draft: false
 hidden: false
 # --- 目錄設定 ---

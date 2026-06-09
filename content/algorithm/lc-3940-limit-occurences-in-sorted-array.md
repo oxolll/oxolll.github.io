@@ -2,7 +2,7 @@
 title: "LeetCode 3940. Limit Occurrences in Sorted Array"
 date: 2026-05-24T15:50:00+08:00
 lastmod: 2026-05-24T15:50:00+08:00
-difficulty: 1200
+difficulty: 1201
 draft: false
 hidden: false
 # --- 目錄設定 ---

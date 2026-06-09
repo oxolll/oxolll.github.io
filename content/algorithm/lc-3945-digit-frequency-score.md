@@ -2,7 +2,7 @@
 title: "LeetCode 3945. Digit Frequency Score"
 date: 2026-06-02T14:30:00+08:00
 lastmod: 2026-06-02T14:30:00+08:00
-difficulty: 1200
+difficulty: 1201
 draft: false
 hidden: false
 # --- 目錄設定 ---

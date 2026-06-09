@@ -2,7 +2,7 @@
 title: "LeetCode 3946. Maximum Number of Items From Sale I"
 date: 2026-06-02T15:00:00+08:00
 lastmod: 2026-06-02T15:00:00+08:00
-difficulty: 1700
+difficulty: 1728
 draft: false
 hidden: false
 # --- 目錄設定 ---

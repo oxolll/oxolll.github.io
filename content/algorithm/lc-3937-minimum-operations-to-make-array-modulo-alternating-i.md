@@ -2,7 +2,7 @@
 title: "LeetCode 3937. Minimum Operations to Make Array Modulo Alternating I"
 date: 2026-05-24T15:35:00+08:00
 lastmod: 2026-05-24T15:35:00+08:00
-difficulty: 1500
+difficulty: 1626
 draft: false
 hidden: false
 # --- 目錄設定 ---

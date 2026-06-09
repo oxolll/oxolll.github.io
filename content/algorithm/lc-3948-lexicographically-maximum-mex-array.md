@@ -2,7 +2,7 @@
 title: "LeetCode 3948. Lexicographically Maximum MEX Array"
 date: 2026-06-02T16:20:00+08:00
 lastmod: 2026-06-02T16:20:00+08:00
-difficulty: 2000
+difficulty: 2122
 draft: false
 hidden: false
 # --- 目錄設定 ---

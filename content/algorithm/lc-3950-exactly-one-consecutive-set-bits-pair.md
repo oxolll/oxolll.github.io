@@ -2,7 +2,7 @@
 title: "LeetCode 3950. Exactly One Consecutive Set Bits Pair"
 date: 2026-06-09T14:15:00+08:00
 lastmod: 2026-06-09T14:15:00+08:00
-difficulty: Easy
+difficulty: 1200
 draft: false
 hidden: false
 # --- 目錄設定 ---

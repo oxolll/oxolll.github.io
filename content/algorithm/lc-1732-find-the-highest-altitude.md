@@ -13,7 +13,7 @@ math: true
 categories: ["algorithm"]
 tags: ["leetcode", "array", "prefix-sum"]
 keywords: ["LC1732", "Easy", "1256", "Highest Altitude", "前綴和", "陣列", "即時更新"]
-description: "LeetCode 第 1732 題：Find the Highest Altitude。難度評分：1256。探討如何運用動態前綴和 (Prefix Sum) 的滾動變數思維，在 O(N) 時間與 O(1) 空間的極致效能下追蹤並計算旅程中的最高海拔。"
+description: "LeetCode 第 1732 題：Find the Highest Altitude。難度評分：1256。探討如何運用動態前綴和 (Prefix Sum) 的滾動變數思維，在 O(N) 時間與 O(1) 空間的極致效能下追蹤並計s算旅程中的最高海拔。"
 ---
 
 ## 📊 題目資訊
